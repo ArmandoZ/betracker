@@ -1,0 +1,545 @@
+{
+    "smtp": [
+        {
+            "sip": "10.50.50.31",
+            "dip": "10.7.133.19",
+            "daily_avg_connection_count": 1.0,
+            "daily_avg_uplink_length": 12134.033333333333,
+            "daily_avg_downlink_length": 12371.166666666666
+        },
+        {
+            "sip": "10.50.50.37",
+            "dip": "10.7.133.16",
+            "daily_avg_connection_count": 1.0,
+            "daily_avg_uplink_length": 12949.666666666666,
+            "daily_avg_downlink_length": 11686.8
+        },
+        {
+            "sip": "10.50.50.46",
+            "dip": "10.7.133.16",
+            "daily_avg_connection_count": 1.0,
+            "daily_avg_uplink_length": 10347.4,
+            "daily_avg_downlink_length": 12416.533333333333
+        }
+    ],
+    "ssh": [
+        {
+            "sip": "10.50.50.46",
+            "dip": "10.7.133.16",
+            "daily_avg_connection_count": 4.866666666666666,
+            "daily_avg_uplink_length": 121304.63333333333,
+            "daily_avg_downlink_length": 40199.4
+        },
+        {
+            "sip": "10.50.50.46",
+            "dip": "183.131.24.41",
+            "daily_avg_connection_count": 0.8,
+            "daily_avg_uplink_length": 36004114.06666667,
+            "daily_avg_downlink_length": 24670544.666666668
+        },
+        {
+            "sip": "10.50.50.46",
+            "dip": "219.216.128.25",
+            "daily_avg_connection_count": 19.133333333333333,
+            "daily_avg_uplink_length": 847428158.5,
+            "daily_avg_downlink_length": 864098362.6333333
+        },
+        {
+            "sip": "10.50.50.44",
+            "dip": "10.7.133.17",
+            "daily_avg_connection_count": 5.2,
+            "daily_avg_uplink_length": 133801.46666666667,
+            "daily_avg_downlink_length": 43203.96666666667
+        },
+        {
+            "sip": "10.50.50.44",
+            "dip": "183.131.24.41",
+            "daily_avg_connection_count": 1.1,
+            "daily_avg_uplink_length": 49339135.4,
+            "daily_avg_downlink_length": 56672702.666666664
+        },
+        {
+            "sip": "10.50.50.44",
+            "dip": "69.171.233.24",
+            "daily_avg_connection_count": 0.9,
+            "daily_avg_uplink_length": 57338540.233333334,
+            "daily_avg_downlink_length": 22670266.333333332
+        },
+        {
+            "sip": "10.50.50.37",
+            "dip": "10.7.133.16",
+            "daily_avg_connection_count": 5.233333333333333,
+            "daily_avg_uplink_length": 129167.33333333333,
+            "daily_avg_downlink_length": 40862.666666666664
+        },
+        {
+            "sip": "10.50.50.37",
+            "dip": "219.216.128.25",
+            "daily_avg_connection_count": 30.133333333333333,
+            "daily_avg_uplink_length": 1445478994.9333334,
+            "daily_avg_downlink_length": 1337483540.6333334
+        },
+        {
+            "sip": "10.50.50.37",
+            "dip": "50.232.28.10",
+            "daily_avg_connection_count": 1.1666666666666667,
+            "daily_avg_uplink_length": 46005150.0,
+            "daily_avg_downlink_length": 50671913.266666666
+        }
+    ],
+    "postgresql": [
+        {
+            "sip": "10.64.105.242",
+            "dip": "10.50.50.29",
+            "daily_avg_connection_count": 0.6333333333333333,
+            "daily_avg_uplink_length": 24002624.066666666,
+            "daily_avg_downlink_length": 51002831.0
+        },
+        {
+            "sip": "10.64.105.242",
+            "dip": "10.50.50.26",
+            "daily_avg_connection_count": 1.1666666666666667,
+            "daily_avg_uplink_length": 42004218.3,
+            "daily_avg_downlink_length": 36006490.166666664
+        },
+        {
+            "sip": "10.64.105.242",
+            "dip": "10.50.50.28",
+            "daily_avg_connection_count": 0.5,
+            "daily_avg_uplink_length": 10001632.0,
+            "daily_avg_downlink_length": 28002002.6
+        },
+        {
+            "sip": "10.64.105.36",
+            "dip": "10.50.50.29",
+            "daily_avg_connection_count": 0.5333333333333333,
+            "daily_avg_uplink_length": 26002056.166666668,
+            "daily_avg_downlink_length": 13003174.533333333
+        },
+        {
+            "sip": "10.64.105.36",
+            "dip": "10.7.133.16",
+            "daily_avg_connection_count": 0.3,
+            "daily_avg_uplink_length": 5001590.066666666,
+            "daily_avg_downlink_length": 13001329.866666667
+        },
+        {
+            "sip": "10.64.105.36",
+            "dip": "10.50.50.28",
+            "daily_avg_connection_count": 0.6333333333333333,
+            "daily_avg_uplink_length": 14001883.7,
+            "daily_avg_downlink_length": 31003146.6
+        },
+        {
+            "sip": "10.64.105.160",
+            "dip": "10.50.50.29",
+            "daily_avg_connection_count": 0.8666666666666667,
+            "daily_avg_uplink_length": 21003252.2,
+            "daily_avg_downlink_length": 33004615.4
+        },
+        {
+            "sip": "10.64.105.160",
+            "dip": "10.50.50.26",
+            "daily_avg_connection_count": 0.9,
+            "daily_avg_uplink_length": 44003358.4,
+            "daily_avg_downlink_length": 27004611.466666665
+        },
+        {
+            "sip": "10.64.105.160",
+            "dip": "10.7.133.20",
+            "daily_avg_connection_count": 0.2,
+            "daily_avg_uplink_length": 13000749.4,
+            "daily_avg_downlink_length": 1428.0333333333333
+        }
+    ],
+    "tds": [
+        {
+            "sip": "10.64.105.75",
+            "dip": "10.50.50.35",
+            "daily_avg_connection_count": 1.0333333333333334,
+            "daily_avg_uplink_length": 36004517.86666667,
+            "daily_avg_downlink_length": 63005637.43333333
+        },
+        {
+            "sip": "10.64.105.75",
+            "dip": "10.50.50.43",
+            "daily_avg_connection_count": 0.5,
+            "daily_avg_uplink_length": 22002478.6,
+            "daily_avg_downlink_length": 32002468.0
+        },
+        {
+            "sip": "10.64.105.75",
+            "dip": "10.50.50.29",
+            "daily_avg_connection_count": 0.3333333333333333,
+            "daily_avg_uplink_length": 7001463.166666667,
+            "daily_avg_downlink_length": 18001620.8
+        },
+        {
+            "sip": "10.64.105.160",
+            "dip": "10.50.50.28",
+            "daily_avg_connection_count": 0.5,
+            "daily_avg_uplink_length": 13001926.3,
+            "daily_avg_downlink_length": 6002317.466666667
+        },
+        {
+            "sip": "10.64.105.160",
+            "dip": "10.50.50.29",
+            "daily_avg_connection_count": 0.8666666666666667,
+            "daily_avg_uplink_length": 25003343.166666668,
+            "daily_avg_downlink_length": 44005042.4
+        },
+        {
+            "sip": "10.64.105.160",
+            "dip": "10.50.50.40",
+            "daily_avg_connection_count": 0.26666666666666666,
+            "daily_avg_uplink_length": 14001423.166666666,
+            "daily_avg_downlink_length": 4000933.0
+        },
+        {
+            "sip": "10.64.105.13",
+            "dip": "10.50.50.26",
+            "daily_avg_connection_count": 1.8,
+            "daily_avg_uplink_length": 49007804.733333334,
+            "daily_avg_downlink_length": 92008935.16666667
+        },
+        {
+            "sip": "10.64.105.13",
+            "dip": "10.50.50.29",
+            "daily_avg_connection_count": 1.5333333333333334,
+            "daily_avg_uplink_length": 49005684.93333333,
+            "daily_avg_downlink_length": 67007600.2
+        },
+        {
+            "sip": "10.64.105.13",
+            "dip": "10.7.133.16",
+            "daily_avg_connection_count": 0.26666666666666666,
+            "daily_avg_uplink_length": 14000924.833333334,
+            "daily_avg_downlink_length": 5001623.933333334
+        }
+    ],
+    "mysql": [
+        {
+            "sip": "10.64.105.112",
+            "dip": "10.50.50.43",
+            "daily_avg_connection_count": 0.23333333333333334,
+            "daily_avg_uplink_length": 6000825.733333333,
+            "daily_avg_downlink_length": 573.5666666666667
+        },
+        {
+            "sip": "10.64.105.112",
+            "dip": "10.7.133.15",
+            "daily_avg_connection_count": 0.23333333333333334,
+            "daily_avg_uplink_length": 10000639.966666667,
+            "daily_avg_downlink_length": 6000684.566666666
+        },
+        {
+            "sip": "10.64.105.112",
+            "dip": "10.50.50.41",
+            "daily_avg_connection_count": 0.3,
+            "daily_avg_uplink_length": 14000922.633333333,
+            "daily_avg_downlink_length": 10001685.033333333
+        },
+        {
+            "sip": "10.64.105.203",
+            "dip": "10.50.50.28",
+            "daily_avg_connection_count": 1.1333333333333333,
+            "daily_avg_uplink_length": 51004693.7,
+            "daily_avg_downlink_length": 35005321.2
+        },
+        {
+            "sip": "10.64.105.203",
+            "dip": "10.50.50.26",
+            "daily_avg_connection_count": 0.8666666666666667,
+            "daily_avg_uplink_length": 14002791.133333333,
+            "daily_avg_downlink_length": 24003377.633333333
+        },
+        {
+            "sip": "10.64.105.203",
+            "dip": "10.7.133.15",
+            "daily_avg_connection_count": 0.5333333333333333,
+            "daily_avg_uplink_length": 6002329.266666667,
+            "daily_avg_downlink_length": 19001875.033333335
+        },
+        {
+            "sip": "10.64.106.45",
+            "dip": "10.50.50.29",
+            "daily_avg_connection_count": 1.1333333333333333,
+            "daily_avg_uplink_length": 71005304.03333333,
+            "daily_avg_downlink_length": 22006052.033333335
+        },
+        {
+            "sip": "10.64.106.45",
+            "dip": "10.7.133.16",
+            "daily_avg_connection_count": 0.1,
+            "daily_avg_uplink_length": 526.8,
+            "daily_avg_downlink_length": 4000336.933333333
+        },
+        {
+            "sip": "10.64.106.45",
+            "dip": "10.50.50.26",
+            "daily_avg_connection_count": 0.9666666666666667,
+            "daily_avg_uplink_length": 54003883.2,
+            "daily_avg_downlink_length": 34004881.7
+        }
+    ],
+    "sftp": [
+        {
+            "sip": "10.64.105.116",
+            "dip": "10.50.50.28",
+            "daily_avg_connection_count": 1.0333333333333334,
+            "daily_avg_uplink_length": 37003880.5,
+            "daily_avg_downlink_length": 44004762.733333334
+        },
+        {
+            "sip": "10.64.105.116",
+            "dip": "10.50.50.26",
+            "daily_avg_connection_count": 1.5333333333333334,
+            "daily_avg_uplink_length": 60005510.333333336,
+            "daily_avg_downlink_length": 61007281.8
+        },
+        {
+            "sip": "10.64.105.116",
+            "dip": "10.50.50.46",
+            "daily_avg_connection_count": 0.6,
+            "daily_avg_uplink_length": 36002437.166666664,
+            "daily_avg_downlink_length": 21002612.033333335
+        },
+        {
+            "sip": "10.64.106.34",
+            "dip": "10.50.50.26",
+            "daily_avg_connection_count": 1.6,
+            "daily_avg_uplink_length": 42006774.766666666,
+            "daily_avg_downlink_length": 88006894.73333333
+        },
+        {
+            "sip": "10.64.106.34",
+            "dip": "10.50.50.40",
+            "daily_avg_connection_count": 0.13333333333333333,
+            "daily_avg_uplink_length": 9000555.1,
+            "daily_avg_downlink_length": 530.3666666666667
+        },
+        {
+            "sip": "10.64.106.34",
+            "dip": "10.50.50.29",
+            "daily_avg_connection_count": 0.4,
+            "daily_avg_uplink_length": 1002206.1333333333,
+            "daily_avg_downlink_length": 20002347.933333334
+        },
+        {
+            "sip": "10.64.105.9",
+            "dip": "10.50.50.33",
+            "daily_avg_connection_count": 0.2,
+            "daily_avg_uplink_length": 5000841.233333333,
+            "daily_avg_downlink_length": 1182.3333333333333
+        },
+        {
+            "sip": "10.64.105.9",
+            "dip": "10.7.133.15",
+            "daily_avg_connection_count": 0.36666666666666664,
+            "daily_avg_uplink_length": 11001518.966666667,
+            "daily_avg_downlink_length": 6002043.2
+        },
+        {
+            "sip": "10.64.105.9",
+            "dip": "10.50.50.49",
+            "daily_avg_connection_count": 0.8,
+            "daily_avg_uplink_length": 81003889.4,
+            "daily_avg_downlink_length": 12004980.8
+        }
+    ],
+    "ftp": [
+        {
+            "sip": "10.64.105.58",
+            "dip": "10.50.50.28",
+            "daily_avg_connection_count": 0.5666666666666667,
+            "daily_avg_uplink_length": 26002085.333333332,
+            "daily_avg_downlink_length": 13002453.5
+        },
+        {
+            "sip": "10.64.105.58",
+            "dip": "10.50.50.29",
+            "daily_avg_connection_count": 1.1333333333333333,
+            "daily_avg_uplink_length": 35003879.3,
+            "daily_avg_downlink_length": 34006475.5
+        },
+        {
+            "sip": "10.64.105.58",
+            "dip": "10.50.50.40",
+            "daily_avg_connection_count": 0.4,
+            "daily_avg_uplink_length": 4001278.4,
+            "daily_avg_downlink_length": 18001607.133333333
+        },
+        {
+            "sip": "10.64.105.75",
+            "dip": "10.50.50.36",
+            "daily_avg_connection_count": 0.26666666666666666,
+            "daily_avg_uplink_length": 16000819.266666668,
+            "daily_avg_downlink_length": 10000890.866666667
+        },
+        {
+            "sip": "10.64.105.75",
+            "dip": "10.50.50.29",
+            "daily_avg_connection_count": 1.0666666666666667,
+            "daily_avg_uplink_length": 37003878.8,
+            "daily_avg_downlink_length": 31004021.133333333
+        },
+        {
+            "sip": "10.64.105.75",
+            "dip": "10.50.50.26",
+            "daily_avg_connection_count": 1.4666666666666666,
+            "daily_avg_uplink_length": 79005819.36666666,
+            "daily_avg_downlink_length": 54006695.9
+        },
+        {
+            "sip": "10.64.105.13",
+            "dip": "10.50.50.29",
+            "daily_avg_connection_count": 0.5,
+            "daily_avg_uplink_length": 20001743.9,
+            "daily_avg_downlink_length": 37002659.96666667
+        },
+        {
+            "sip": "10.64.105.13",
+            "dip": "10.50.50.26",
+            "daily_avg_connection_count": 1.0333333333333334,
+            "daily_avg_uplink_length": 49004055.8,
+            "daily_avg_downlink_length": 40003954.333333336
+        },
+        {
+            "sip": "10.64.105.13",
+            "dip": "10.50.50.38",
+            "daily_avg_connection_count": 0.1,
+            "daily_avg_uplink_length": 348.6,
+            "daily_avg_downlink_length": 6000172.8
+        }
+    ],
+    "mongodb": [
+        {
+            "sip": "10.64.105.120",
+            "dip": "10.7.133.15",
+            "daily_avg_connection_count": 0.9333333333333333,
+            "daily_avg_uplink_length": 41004189.766666666,
+            "daily_avg_downlink_length": 44004877.03333333
+        },
+        {
+            "sip": "10.64.105.120",
+            "dip": "10.50.50.49",
+            "daily_avg_connection_count": 0.5333333333333333,
+            "daily_avg_uplink_length": 12001901.566666666,
+            "daily_avg_downlink_length": 45002952.6
+        },
+        {
+            "sip": "10.64.105.120",
+            "dip": "10.50.50.26",
+            "daily_avg_connection_count": 1.5666666666666667,
+            "daily_avg_uplink_length": 65006126.6,
+            "daily_avg_downlink_length": 49006373.0
+        },
+        {
+            "sip": "10.64.105.25",
+            "dip": "10.50.50.44",
+            "daily_avg_connection_count": 0.16666666666666666,
+            "daily_avg_uplink_length": 3000719.533333333,
+            "daily_avg_downlink_length": 1000893.3333333334
+        },
+        {
+            "sip": "10.64.105.25",
+            "dip": "10.50.50.30",
+            "daily_avg_connection_count": 0.3,
+            "daily_avg_uplink_length": 5001315.366666666,
+            "daily_avg_downlink_length": 28001466.633333333
+        },
+        {
+            "sip": "10.64.105.25",
+            "dip": "10.50.50.26",
+            "daily_avg_connection_count": 1.7333333333333334,
+            "daily_avg_uplink_length": 56005985.36666667,
+            "daily_avg_downlink_length": 79008814.83333333
+        },
+        {
+            "sip": "10.64.105.161",
+            "dip": "10.50.50.26",
+            "daily_avg_connection_count": 1.4,
+            "daily_avg_uplink_length": 83005365.23333333,
+            "daily_avg_downlink_length": 77006960.56666666
+        },
+        {
+            "sip": "10.64.105.161",
+            "dip": "10.50.50.40",
+            "daily_avg_connection_count": 0.5,
+            "daily_avg_uplink_length": 23002363.066666666,
+            "daily_avg_downlink_length": 13002303.733333332
+        },
+        {
+            "sip": "10.64.105.161",
+            "dip": "10.7.133.20",
+            "daily_avg_connection_count": 0.5,
+            "daily_avg_uplink_length": 6001940.966666667,
+            "daily_avg_downlink_length": 20002464.866666667
+        }
+    ],
+    "http": [
+        {
+            "sip": "10.64.106.10",
+            "dip": "118.26.21.75",
+            "daily_avg_connection_count": 3.7333333333333334,
+            "daily_avg_uplink_length": 57584.333333333336,
+            "daily_avg_downlink_length": 7493556.8
+        },
+        {
+            "sip": "10.64.106.10",
+            "dip": "180.97.34.146",
+            "daily_avg_connection_count": 13.433333333333334,
+            "daily_avg_uplink_length": 221672.16666666666,
+            "daily_avg_downlink_length": 21546432.2
+        },
+        {
+            "sip": "10.64.106.10",
+            "dip": "10.5.71.60",
+            "daily_avg_connection_count": 51.86666666666667,
+            "daily_avg_uplink_length": 874398.7666666667,
+            "daily_avg_downlink_length": 83348472.66666667
+        },
+        {
+            "sip": "10.64.105.15",
+            "dip": "10.5.71.60",
+            "daily_avg_connection_count": 28.933333333333334,
+            "daily_avg_uplink_length": 477515.7,
+            "daily_avg_downlink_length": 48743684.4
+        },
+        {
+            "sip": "10.64.105.15",
+            "dip": "10.63.120.70",
+            "daily_avg_connection_count": 16.2,
+            "daily_avg_uplink_length": 276086.9666666667,
+            "daily_avg_downlink_length": 26920143.166666668
+        },
+        {
+            "sip": "10.64.105.15",
+            "dip": "74.86.12.172",
+            "daily_avg_connection_count": 17.766666666666666,
+            "daily_avg_uplink_length": 283653.5333333333,
+            "daily_avg_downlink_length": 30147615.8
+        },
+        {
+            "sip": "10.64.105.22",
+            "dip": "10.5.71.60",
+            "daily_avg_connection_count": 26.466666666666665,
+            "daily_avg_uplink_length": 459312.3,
+            "daily_avg_downlink_length": 43794786.06666667
+        },
+        {
+            "sip": "10.64.105.22",
+            "dip": "58.250.137.36",
+            "daily_avg_connection_count": 2.466666666666667,
+            "daily_avg_uplink_length": 40110.03333333333,
+            "daily_avg_downlink_length": 3641828.966666667
+        },
+        {
+            "sip": "10.64.105.22",
+            "dip": "10.63.120.70",
+            "daily_avg_connection_count": 11.933333333333334,
+            "daily_avg_uplink_length": 202950.63333333333,
+            "daily_avg_downlink_length": 19789104.4
+        }
+    ]
+}
