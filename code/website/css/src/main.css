@@ -1,0 +1,114 @@
+
+.axis text {
+  font: 10px sans-serif;
+  fill:black;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.outer-div {
+	/* background-color: #222; */
+	border-radius: 7px;
+	border: 2px solid rgb(199, 199, 199);
+}
+
+.block-div {
+	height: 100%;
+	border-radius: 7px;
+}
+
+#page-content-wrapper {
+	min-height: 800px;
+	min-width: 1440px;
+	width: 1440px;
+	height: 800px;
+}
+
+#wrapper {
+	min-height: 800px;
+	height: 100%;
+}
+
+.container {
+	min-height: 730px;
+	height: 100%;
+	padding: 0 0 0 0;
+}
+
+.tooltip {
+	background-color: #55555598;
+	padding: 20 5 5 5;
+	border-radius: 7px;
+	border: 2px solid rgb(199, 199, 199);
+}
+
+/* .tooltip->p {
+	font
+} */
+
+#top-div{
+	width: 100%;
+	height: 76%;
+}
+#top-left-div{
+	float: left;
+	width: 100%;
+	height: 100%;
+	padding: 2px;
+}
+#top-middle-div{
+	float: left;
+	width: 33%;
+	height: 100%;
+	padding: 1px 0 0;
+}
+#top-right-div{
+	float: left;
+	width: 33%;
+	height: 100%;
+}
+#bottom-div{
+	top:45%;
+	width: 100%;
+	height: 50%;	
+}
+#bottom-left-div{
+	float: left;
+	width: 50%;
+	height: 100%;
+	padding: 2px;
+}
+#bottom-right-div{
+	float: left;
+	width: 49%;
+	height: 100%;
+}
+
+
+
+.btn-div{
+	margin:5px;
+	line-height:26px
+}
+#view2_btn{
+	height:26px;
+	margin: -26px 0 0;
+}
+
+#view2{
+	overflow:hidden;
+	bottom:0px;
+}
+
+
+.bar {
+    fill: steelblue;
+}
+
+.axis path {
+    display: none;
+}
