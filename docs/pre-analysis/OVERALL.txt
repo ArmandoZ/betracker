@@ -1,0 +1,6 @@
+1. 通过LogIn的结果，可以近似获取userId-sip的一一对应关系
+2. 通过Email的结果，可以近似获取sip-email的一一对应关系
+
+至此，我们有了userId-sip-email的简单个人profile。在此基础上可以分析：
+
+1. 以个人为单位的的checking、logIn、email、weblog、tcplog规律
