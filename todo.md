@@ -78,7 +78,7 @@ sip-email一一对应（？）
 		交付：  
 		-> 能看的图  
 		再说     
-3. [第二题] 出每种数据的简单可视化结果(yuheng zhi & minghao xu & zhaoguo zhu)   
+3. [第二题] 出每种数据的简单可视化结果(yuheng zhi & minghao xu & zhaoguo zhu)     
 		交付：  
 		-> 根据上述指标/可视化方式，画出简单的分布图(能看就行，建议matlab)
 		zzg checkin-out   
