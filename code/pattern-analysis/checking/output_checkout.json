@@ -1,0 +1,151 @@
+[
+    {
+        "eng_mean": "18:37:50",
+        "finance_mean": "19:03:29",
+        "hr_mean": "19:46:30"
+    },
+    {
+        "time": "00:30",
+        "engineering": 0,
+        "finance": 0,
+        "hr": 0
+    },
+    {
+        "time": "01:30",
+        "engineering": 0,
+        "finance": 0,
+        "hr": 0
+    },
+    {
+        "time": "02:30",
+        "engineering": 0,
+        "finance": 0,
+        "hr": 0
+    },
+    {
+        "time": "03:30",
+        "engineering": 0,
+        "finance": 0,
+        "hr": 0
+    },
+    {
+        "time": "04:30",
+        "engineering": 0,
+        "finance": 0,
+        "hr": 0
+    },
+    {
+        "time": "05:30",
+        "engineering": 0,
+        "finance": 0,
+        "hr": 0
+    },
+    {
+        "time": "06:30",
+        "engineering": 0,
+        "finance": 0,
+        "hr": 0
+    },
+    {
+        "time": "07:30",
+        "engineering": 0,
+        "finance": 0,
+        "hr": 0
+    },
+    {
+        "time": "08:30",
+        "engineering": 0,
+        "finance": 0,
+        "hr": 0
+    },
+    {
+        "time": "09:30",
+        "engineering": 0,
+        "finance": 0,
+        "hr": 0
+    },
+    {
+        "time": "10:30",
+        "engineering": 0,
+        "finance": 0,
+        "hr": 0
+    },
+    {
+        "time": "11:30",
+        "engineering": 0,
+        "finance": 0,
+        "hr": 0
+    },
+    {
+        "time": "12:30",
+        "engineering": 0,
+        "finance": 0,
+        "hr": 0
+    },
+    {
+        "time": "13:30",
+        "engineering": 2,
+        "finance": 3,
+        "hr": 0
+    },
+    {
+        "time": "14:30",
+        "engineering": 9,
+        "finance": 4,
+        "hr": 1
+    },
+    {
+        "time": "15:30",
+        "engineering": 4,
+        "finance": 4,
+        "hr": 1
+    },
+    {
+        "time": "16:30",
+        "engineering": 4,
+        "finance": 4,
+        "hr": 2
+    },
+    {
+        "time": "17:30",
+        "engineering": 6,
+        "finance": 14,
+        "hr": 3
+    },
+    {
+        "time": "18:30",
+        "engineering": 5,
+        "finance": 7,
+        "hr": 30
+    },
+    {
+        "time": "19:30",
+        "engineering": 12,
+        "finance": 13,
+        "hr": 19
+    },
+    {
+        "time": "20:30",
+        "engineering": 6,
+        "finance": 9,
+        "hr": 17
+    },
+    {
+        "time": "21:30",
+        "engineering": 9,
+        "finance": 7,
+        "hr": 7
+    },
+    {
+        "time": "22:30",
+        "engineering": 1,
+        "finance": 2,
+        "hr": 1
+    },
+    {
+        "time": "23:30",
+        "engineering": 0,
+        "finance": 0,
+        "hr": 0
+    }
+]

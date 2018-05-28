@@ -52,11 +52,11 @@
 
 #top-div{
 	width: 100%;
-	height: 90%;
+	height: 44%;
 }
 #top-left-div{
 	float: left;
-	width: 100%;
+	width: 33%;
 	height: 100%;
 	padding: 2px;
 }
@@ -74,7 +74,7 @@
 #bottom-div{
 	top:45%;
 	width: 100%;
-	height: 50%;	
+	height: 80%;	
 }
 #bottom-left-div{
 	float: left;
@@ -84,22 +84,8 @@
 }
 #bottom-right-div{
 	float: left;
-	width: 49%;
+	width: 100%;
 	height: 100%;
-}
-
-#view1{
-	float: left;
-	width: 100%;
-	height: 50%;
-	padding: 2px;
-}
-
-#view2{
-	float: left;
-	width: 100%;
-	height: 50%;
-	padding: 2px;
 }
 
 
@@ -120,14 +106,7 @@
 
 
 .bar {
-}
-
-.barBase {
     fill: steelblue;
-}
-
-.barSelected {
-    fill: red;
 }
 
 .axis path {

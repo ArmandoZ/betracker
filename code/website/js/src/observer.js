@@ -17,4 +17,5 @@ function Observer() {
 }
 
 var obs = Observer();
-var view1 = View1(obs);
+var view1 = View1(obs, "checkin", "checking");
+var view2 = View2(obs, "checkout", "checking");

@@ -20,6 +20,7 @@
 	
 	<div id="wrapper">
         <div class="overlay"></div>
+        <p>输入日期：2017-01-</p><input type="text"><button id="switch-date">Go</button>
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
@@ -28,8 +29,12 @@
                 <div id="top-div">
                     <div id="top-left-div" class="outer-div">
                         <div id="view1" class="block-div">
-                            <svg id="view1_svg" width="1200" height="520"></svg>
-                            <h5 id="sub_title" style="margin: 0px 0px 0px 0px; color:white; text-align:center;">TITLE</h5>
+                            <svg id="view1_svg" width="1170" height="260"></svg>
+                            <h5 id="sub_title_1" style="margin: 0px 0px 0px 0px; color:white; text-align:center;">TITLE</h5>
+                        </div>
+                        <div id="view2" class="block-div">
+                            <svg id="view2_svg" width="1170" height="260"></svg>
+                            <h5 id="sub_title_2" style="margin: 0px 0px 0px 0px; color:white; text-align:center;">TITLE</h5>
                         </div>
                     </div>
                 </div>
@@ -45,9 +50,15 @@
 	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 	<script src="http://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
     <script type="text/javascript">
-        $('#sub_title').text("haha");
+        $('#sub_title_1').text("haha1");
+        $('#sub_title_2').text("haha2");
     </script>
+    <script src="../js/src/globals.js"></script>
     <script src="../js/src/view1.js"></script>
+    <script src="../js/src/view2.js"></script>
     <script src="../js/src/observer.js"></script>
+    <script type="text/javascript">
+        // $('#switch-date').click // TODO
+    </script>
 </body>
 </html>

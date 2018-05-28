@@ -1,41 +1,9 @@
-function dateStrToSecs(dateSec) {
-	var hour = parseInt(dateSec.slice(0, 2));
-	var minute = parseInt(dateSec.slice(3, 5));
-	var second = parseInt(dateSec.slice(6, 8));
-	return hour * 3600 + minute * 60 + second;
-}
-
-function secsTodateStr(secs) {
-	var hour = Math.round(secs / 3600).toString();
-	var minute = Math.round((secs % 3600) / 60).toString();
-	var second = Math.round(secs % 60).toString();
-	if (hour.length == 1) {
-		hour = "0" + hour;
-	}
-	if (minute.length == 1) {
-		minute = "0" + minute;
-	}
-	if (second.length == 1) {
-		second = "0" + second;
-	}
-	return hour + ":" + minute + ":" + second;
-}
-
-function View1(Observer, varName, fileName) {
-	console.log("hah");
-	var view1 = {};
-	view1.onMessage = function(message, data, from) {
-		console.log("view1::onMessage " + message);
-		if (message == barMouseoverEvent) {
-			highlightBar(data, true);
-		} else if (message == barMouseoutEvent) {
-			highlightBar(data, false);
-		}
-	}
+function View2(Observer, varName, fileName) {
+	var view2 = {};
 
 	var separations = 30;
 	
-	var svg = d3.select("#view1_svg"),
+	var svg = d3.select("#view2_svg"),
     margin = {top: 20, right: 20, bottom: 30, left: 40},
     width = +svg.attr("width") - margin.left - margin.right,
     height = +svg.attr("height") - margin.top - margin.bottom;
@@ -54,7 +22,10 @@ function View1(Observer, varName, fileName) {
 	}, function(error, data) {
 		if (error) throw error;
 
+		// console.log(data)
+
 		var tmpData = data;
+
 		data = new Array();
 		for (var i = 0; i < tmpData.length; i++) {
 			if (tmpData[i][varName] != "0") {
@@ -64,6 +35,25 @@ function View1(Observer, varName, fileName) {
 				data.push(curRow)
 			}
 		}
+
+
+		var tmpMinVal = 999999;
+		var tmpMinIdx = -1;
+		for (var i = 0; i < data.length; i++) {
+			tmpMinVal = 999999;
+			for (var j = i; j < data.length; j++) {
+				if (data[j][varName] < tmpMinVal) {
+					tmpMinIdx = j;
+					tmpMinVal = data[j][varName]
+				}
+			}
+			var tmp = data[i];
+			data[i] = data[tmpMinIdx];
+			data[tmpMinIdx] = tmp;
+		}
+
+		console.log(data)
+
 		var maxVal = data[data.length - 1][varName];
 		var minVal = data[0][varName];
 		var delta = (maxVal - minVal) / separations;
@@ -77,6 +67,7 @@ function View1(Observer, varName, fileName) {
 		}
 
 		tmpData = data;
+
 		data = new Array();
 		var lastCheckin = 0;
 		var curRow = null;		
@@ -93,7 +84,7 @@ function View1(Observer, varName, fileName) {
 				curRow.ids.push(tmpData[i].id)
 			} else {
 				curRow.frequency += 1;
-				curRow.ids.push(tmpData[i].id)				
+				curRow.ids.push(tmpData[i].id)								
 			}
 		}
 		data.push(curRow)
@@ -123,48 +114,14 @@ function View1(Observer, varName, fileName) {
 		g.selectAll(".bar")
 			.data(data)
 			.enter().append("rect")
-			.attr("class", "bar barBase")
+			.attr("class", "bar")
 			.attr("x", function(d) { return x(d[varName]); })
 			.attr("y", function(d) { return y(d.frequency); })
 			.attr("width", x.bandwidth())
-			.attr("height", function(d) { return height - y(d.frequency); })
-			.on("mouseover",function(d) {     
-				// tooltip.style("opacity",0.0);
-				// dots = svg.selectAll(".dot");
-				Observer.fireEvent(barMouseoverEvent, 0, View1);
-			})
-			.on("mouseout",function(d) {     
-				// tooltip.style("opacity",0.0);
-				// dots = svg.selectAll(".dot");
-				Observer.fireEvent(barMouseoutEvent, 0, View1);
-			});
+			.attr("height", function(d) { return height - y(d.frequency); });
 	});
 
-	function selectBars(data, nodeList) {
-		console.log(nodeList[0].__data__.ids)
-		var res = new Array();
-		for (var i = 0; i < nodeList.length; i++) {
-			if (nodeList) {
-
-			}
-		}
-		return res;
-	}
-
-	function highlightBar(data, ifHighlight) {
-		bars = g.selectAll(".bar");
-		var idxs = selectBars(data, bars._groups[0])
-		for (var i = 0; i < idxs.length; i++) {
-			curBar = bars._groups[0][idxs[i]];
-			if (ifHighlight) {
-				curBar.setAttribute("class", "bar barSelected");
-			} else {
-				curBar.setAttribute("class", "bar barBase");
-			}
-		}
-	}
-
-    Observer.addView(view1);
-    return view1;
+    Observer.addView(view2);
+    return view2;
 
 }
