@@ -9,6 +9,13 @@ cnx = mysql.connector.connect(user='betracker', password='betracker', host='112.
 
 cur = cnx.cursor()
 
+cur.execute('select * from `user`')
+
+# known_users = cur.fetchall()
+known_users = {}
+for i in cur:
+    known_users[i[0]] = i[1]
+
 cur.execute('select * from email')
 g = nx.MultiGraph()
 
@@ -30,9 +37,17 @@ system_email = [
 ]
 for i in cur:
     if i[6].endswith('hightech.com') and i[7].endswith('hightech.com') and i[6] not in system_email and i[7] not in system_email:
-        g.add_node(i[6].split('@')[0], name=i[6].split('@')[0])
-        g.add_node(i[7].split('@')[0], name=i[7].split('@')[0])
-        g.add_edge(i[6].split('@')[0], i[7].split('@')[0])
+        from_id = i[6].split('@')[0]
+        from_kind = 0
+        to_id = i[7].split('@')[0]
+        to_kind = 0
+        if from_id in known_users:
+            from_kind = known_users[from_id]
+        if to_id in known_users:
+            to_kind = known_users[to_id]
+        g.add_node(from_id, name=i[6].split('@')[0], category=from_kind)
+        g.add_node(to_id, name=i[7].split('@')[0], category=to_kind)
+        g.add_edge(from_id, to_id)
     # g.add_node(i[6])
     # g.has_node(i[7])
 
@@ -45,7 +60,7 @@ for i in cur:
 g_data = json_graph.node_link_data(g)
 # print(g_data)
 eg = Graph('email', width=1500, height=800)
-eg.add('people', nodes=g_data['nodes'], links=g_data['links'])
+eg.add('people', nodes=g_data['nodes'], links=g_data['links'], categories=[{'name':'0'},{'name':'1'},{'name':'2'},{'name':'3'}])
 eg.render()
 # nx.draw(g,node_size=12)
 # plt.show()
