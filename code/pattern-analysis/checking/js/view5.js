@@ -16,7 +16,7 @@
         .padding(0.05);
 
     var y = d3.scaleLinear()
-        .rangeRound([height, 0]);
+        .rangeRound  ([height, 0]);
 
     var colorPlain = ["#bf6c00", "#8b7898", "#889bb5"];
     var colorHighlight = ["#ffa640", "#c7a9f5", "#aaeafc"];
@@ -54,6 +54,7 @@
             x1.domain(keys).rangeRound([0, x0.bandwidth()]);
             y.domain([0, 1.2 * d3.max(croppedData5, function(d) { return d3.max(keys, function(key) { return d[key]; }); })]).nice();
 
+            console.log(x0.domain())
             g.append("g")
                 .selectAll("g")
                 .data(croppedData5)

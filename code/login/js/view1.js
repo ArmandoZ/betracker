@@ -1,7 +1,7 @@
 // Draw the china map for view 1
 function View1(Observer) {
 
-    var $bmDiv=$("#top-left-div");
+    var $bmDiv=$("#bottom-div");
     var svgwidth=$bmDiv.width();
     var svgheight=$bmDiv.height();
     var margin = {top: 10, right: 20, bottom: 10, left: 20};
@@ -24,19 +24,16 @@ function View1(Observer) {
 
     // initialize the boxes as rectangle
     function init(){
-
         for (var i = 0; i < num_y; i++){
             rects[i] = new Array();
             for (var j = 0; j < num_x; j++){
                 rects[i][j] = svg.append("rect");
             }
         }
-
     }
 
     // pre-read the data
     function init_data(){
-
         d3.json("./json/login_record.json", function(error, record_root) {
             record_data = record_root;
         });
@@ -44,12 +41,11 @@ function View1(Observer) {
         d3.json("./json/login_ip.json", function(error, ip_root) {
             ip_data = ip_root;
         });
-
     }
 
     function init_box(){
-        var interval_x = 4;
-        var interval_y = 12;
+        var interval_x = 5;
+        var interval_y = 8;
 
         var start_x = width / 2.0 - interval_x * num_x / 2.0;
         var start_y = height / 2.0 - interval_y * num_y / 2.0;
@@ -138,6 +134,9 @@ function View1(Observer) {
     console.log = function(str) {
         console.oldLog(str);
         var tmp_str = str;
+        if (tmp_str == undefined) {
+            return;
+        }
         if (tmp_str.length == 5 && tmp_str[2] == ":"){
             var tmp_hour = parseInt(tmp_str.substring(0,2));
             var tmp_min = parseInt(tmp_str.substring(3,5));

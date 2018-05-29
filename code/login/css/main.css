@@ -88,23 +88,36 @@ text.axis-worktime {
 	width: 100%;
 	height: 100%;
 }
-#top-left-div{
+#top-div{
 	float: left;
-	width: 85%;
-	height: 80%;
+	width: 100%;
+	height: 20%;
   background-color: #FFFACD;
 }
-#top-right-div{
+#middle-div{
   float: right;
-  width: 15%;
-  height: 80%;
+  width: 100%;
+  height: 40%;
   padding: 1%;
   background-color: #FFFACD;
 }
+#middle-left-div{
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding: 1%;
+}
+#middle-right-div{
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding: 1%;
+}
+
 #bottom-div{
   float: right;
   width: 100%;
-  height: 20%;
+  height: 40%;
   padding: 3%;
   background-color: #FFFACD;
 }

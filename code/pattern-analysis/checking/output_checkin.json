@@ -1,8 +1,8 @@
 [
     {
-        "eng_mean": "09:30:18",
-        "finance_mean": "09:45:31",
-        "hr_mean": "09:15:41"
+        "eng_mean": "08:33:35",
+        "finance_mean": "09:01:44",
+        "hr_mean": "09:45:29"
     },
     {
         "time": "00:30",
@@ -48,38 +48,38 @@
     },
     {
         "time": "07:30",
-        "engineering": 0,
-        "finance": 0,
-        "hr": 3
+        "engineering": 96,
+        "finance": 70,
+        "hr": 0
     },
     {
         "time": "08:30",
-        "engineering": 27,
-        "finance": 35,
-        "hr": 38
+        "engineering": 96,
+        "finance": 46,
+        "hr": 0
     },
     {
         "time": "09:30",
-        "engineering": 31,
-        "finance": 22,
+        "engineering": 0,
+        "finance": 88,
         "hr": 40
     },
     {
         "time": "10:30",
         "engineering": 0,
-        "finance": 1,
+        "finance": 0,
         "hr": 0
     },
     {
         "time": "11:30",
         "engineering": 0,
-        "finance": 4,
+        "finance": 0,
         "hr": 0
     },
     {
         "time": "12:30",
         "engineering": 0,
-        "finance": 5,
+        "finance": 0,
         "hr": 0
     },
     {

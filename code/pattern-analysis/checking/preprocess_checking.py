@@ -7,8 +7,28 @@ import json
 # finance = 1
 # hr = 2
 
-engineeringList = [1007, 1013 , 1058, 1059]
-financeList = [1060, 1067, 1068, 1079]
+engineeringList = [
+    1092,
+    1087,
+    1060,
+    1098,
+    1100,
+    1154,
+    1191,
+    1207,
+    1209
+]
+financeList = [
+    1297, 
+    1368,
+    1148,
+    1126,
+    1402,
+    1275,
+    1311,
+    1354,
+    1345
+]
 hrList = [1092, 1096, 1100, 1101]
 
 # ret type, 3 for none

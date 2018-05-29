@@ -103,6 +103,7 @@ function View1(Observer, varName, fileName) {
 		x.domain(data.map(function(d) { return d[varName]; }));
 		y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
 
+		console.log("FUCK")
 		g.append("g")
 			.attr("class", "axis axis--x")
 			.attr("stroke", "#fff")
