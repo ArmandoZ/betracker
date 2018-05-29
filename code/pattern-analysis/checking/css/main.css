@@ -51,44 +51,15 @@
 } */
 
 #top-div{
+	float: left;	
 	width: 100%;
-	height: 44%;
-}
-#top-left-div{
-	float: left;
-	width: 33%;
-	height: 100%;
-	padding: 2px;
-}
-#top-middle-div{
-	float: left;
-	width: 33%;
-	height: 100%;
-	padding: 1px 0 0;
-}
-#top-right-div{
-	float: left;
-	width: 33%;
-	height: 100%;
+	height: 50%;
 }
 #bottom-div{
-	top:45%;
+	float: left;	
 	width: 100%;
-	height: 80%;	
+	height: 50%;	
 }
-#bottom-left-div{
-	float: left;
-	width: 50%;
-	height: 100%;
-	padding: 2px;
-}
-#bottom-right-div{
-	float: left;
-	width: 100%;
-	height: 100%;
-}
-
-
 
 .btn-div{
 	margin:5px;

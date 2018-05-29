@@ -1,7 +1,7 @@
-﻿function View5() {
-    var view5 = {};
+﻿function View4() {
+    var view4 = {};
 
-    var svg = d3.select("#view5_svg"),
+    var svg = d3.select("#view4_svg"),
     margin = {top: 20, right: 20, bottom: 30, left: 40},
     width = +svg.attr("width") - margin.left - margin.right,
     height = +svg.attr("height") - margin.top - margin.bottom;
@@ -25,22 +25,22 @@
     var z = d3.scaleOrdinal()
         .range(colorPlain);
 
-    d3.json("../output_checkout.json", function(error, data) {
+    d3.json("../output_checkin.json", function(error, data) {
         if (error) throw error;
         console.log(data)
-        croppedData5 = new Array();
+        croppedData4 = new Array();
 		for (var i=1; i<data.length; i++) {
-			croppedData5.push(data[i]);
+			croppedData4.push(data[i]);
         }
 
-        console.log(croppedData5)
+        console.log(croppedData4)
         
         var legend;
         
         var keys = ["engineering", "finance", "hr"];
 
         function updatebars(){
-            if (croppedData5.length == 0) {
+            if (croppedData4.length == 0) {
                 return;
             }
             g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -49,13 +49,13 @@
                         .attr("class","tooltip") //用于css设置类样式  
                         .attr("opacity",0.0); 
 
-            x0.domain(croppedData5.map(function(d) { return d.time; }));
+            x0.domain(croppedData4.map(function(d) { return d.time; }));
             x1.domain(keys).rangeRound([0, x0.bandwidth()]);
 
             console.log(x0.domain())
             g.append("g")
                 .selectAll("g")
-                .data(croppedData5)
+                .data(croppedData4)
                 .enter().append("g")
                 .attr("transform", function(d) { return "translate(" + x0(d.time) + ",0)"; })
                 .selectAll("rect")
@@ -106,7 +106,7 @@
         updatebars();
     });
 	
-    return view5;
+    return view4;
 }
 
-view5 = new View5();
+view4 = new View4();

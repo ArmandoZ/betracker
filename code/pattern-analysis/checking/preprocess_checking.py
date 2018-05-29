@@ -7,29 +7,23 @@ import json
 # finance = 1
 # hr = 2
 
-engineeringList = [
-    1092,
-    1087,
-    1060,
-    1098,
-    1100,
-    1154,
-    1191,
-    1207,
-    1209
-]
-financeList = [
-    1297, 
-    1368,
-    1148,
-    1126,
-    1402,
-    1275,
-    1311,
-    1354,
-    1345
-]
-hrList = [1092, 1096, 1100, 1101]
+engineeringList = []
+financeList = []
+hrList = []
+
+with open("../../../email/staff_grouping.json",'r') as load_f:
+    load_dict = json.load(load_f)
+    engineeringList.extend(load_dict["engList"])
+    engineeringList.extend(load_dict["engLeaderList"])
+    financeList.extend(load_dict["financeList"])
+    hrList.extend(load_dict["hrList"])
+
+print(engineeringList)
+print(financeList)
+print(hrList)
+
+# exit()
+
 
 # ret type, 3 for none
 def getType(userId):
@@ -129,6 +123,12 @@ for fileName in fineNamePaths:
             resArray[1][outIdx][userType] += 1
             total[1][userType] += strToSecs(checkout)[3]
             totalCount[1][userType] += 1
+
+# normalize
+for i in range(2):
+    for timeIdx in range(24):
+        for userIdx in range(3):
+            resArray[i][timeIdx][userIdx] = int(resArray[i][timeIdx][userIdx] * 100 / totalCount[i][userIdx]) / 100
 
 # transform
 # resJson: list of {time: "00:30", engineering: 111, finance, 1134, hr: 307}
