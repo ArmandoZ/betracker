@@ -20,4 +20,4 @@ function Observer() {
 var obs = Observer();
 var view1 = View1(obs);
 var view2 = View2(obs);
-//var view3 = View3(obs);
+var view3 = View3(obs);
