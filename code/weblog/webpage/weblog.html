@@ -41,14 +41,15 @@
 <script>
 
     var margin = {top: 30, right: 10, bottom: 10, left: 10},
-        width = 20000 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom;
+        width = 40000 - margin.left - margin.right,
+        height = 200 - margin.top - margin.bottom;
 
     var x = d3.scale.ordinal().rangePoints([0, width], 1),
         y = {},
         dragging = {};
 
-    var line = d3.svg.line(),
+    var line = d3.svg.line()
+            .interpolate("cardinal"),
         axis = d3.svg.axis().orient("left"),
         background,
         foreground;
@@ -59,14 +60,17 @@
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    d3.json("web_counts.json", function(error, cars) {
-
+    d3.csv("web_counts.json", function(error, cars) {
         // Extract the list of dimensions and create a scale for each.
-        x.domain(dimensions = d3.keys(cars[0]).filter(function(d) {
-            return d != "name" && (y[d] = d3.scale.linear()
-                .domain(d3.extent(cars, function(p) { return +p[d]; }))
-                .range([height, 0]));
+        x.domain(dimensions = d3.keys(cars[0])//d3.keys(cars[0])
+            .filter(function(d) {
+                return (y[d] = d3.scale.linear()
+                    .domain(d3.extent(cars, function (p) {
+                        return +p[d];
+                    }))
+                    .range([height, 0]));
         }));
+        alert(dimensions);
 
         // Add grey background lines for context.
         background = svg.append("g")
@@ -146,6 +150,7 @@
 
     // Returns the path for a given data point.
     function path(d) {
+        console.log(d);
         return line(dimensions.map(function(p) { return [position(p), y[p](d[p])]; }));
     }
 
