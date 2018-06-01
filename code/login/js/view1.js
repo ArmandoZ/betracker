@@ -22,6 +22,11 @@ function View1(Observer) {
     var record_data = {};
     var ip_data = {};
 
+    var tooltip = d3.select("body").append("div")
+    .attr("class","tooltip") //用于css设置类样式  
+    .attr("opacity",0.0); 
+
+
     // initialize the boxes as rectangle
     function init(){
         for (var i = 0; i < num_y; i++){
@@ -41,7 +46,7 @@ function View1(Observer) {
         d3.json("./json/login_ip.json", function(error, ip_root) {
             ip_data = ip_root;
         });
-    }
+    }    
 
     function init_box(){
         var interval_x = 5;
@@ -57,9 +62,27 @@ function View1(Observer) {
                     .attr("y", start_y + i * interval_y)
                     .attr("width", interval_x)
                     .attr("height", interval_y)
-                    .attr("fill", "#E6E6FA")
-                    .attr("stroke", "#FFFACD")
-                    .append("title");
+                    .attr("fill", "#575750")
+                    .attr("stroke", "#252522")
+                    .data([i * 10000 + j])
+                    .on("mouseover",function(d,idx) {
+                        var a = d3.select(this)
+                        var title = a._groups[0][0].childNodes[0].textContent
+                        console.log(title)
+                        var col = a._groups[0][0].__data__ % 10000
+                        var row = a._groups[0][0].__data__ / 10000
+                        var str = "<p>" + title + '</p>';
+                        tooltip.html(str)
+                        //设置tooltip的位置(left,top 相对于页面的距离)   
+                                .style("left",(d3.event.pageX)+"px")  
+                                .style("top",(d3.event.pageY+20)+"px")  
+                                .style("opacity",1.0); 
+                    })
+                    .on("mouseout", function(d, idx) {
+                        tooltip.style("opacity",0.0);
+                    })
+                    .append("title")
+                    ;
             }
         }
 
@@ -79,11 +102,12 @@ function View1(Observer) {
             .attr("font-weight", "bold");*/
     }
 
+
     function draw_box(day, interval){
         // recover the boxes
         for (var i = 0; i < num_y; i++){
             for (var j = 0; j < num_x; j++){
-                rects[i][j].attr("fill", "#E6E6FA");
+                rects[i][j].attr("fill", "#575750");
                 rects[i][j].select("title")
                         .text("");
             }
@@ -107,16 +131,16 @@ function View1(Observer) {
             if (tmp_state == "success"){
                 rects[target_id][source_id].transition().duration(1000).attr("fill", "#7CFC00");
                 rects[target_id][source_id].select("title")
-                                        .text("source ip:" + tmp_source + " target ip:" +
-                                            tmp_target + " state:" + tmp_state + " user:"
-                                            + tmp_user + " time:" + tmp_time);
+                                        .text("source ip:" + tmp_source + "\ntarget ip:" +
+                                            tmp_target + "\nstate:" + tmp_state + "\nuser:"
+                                            + tmp_user + "\ntime:" + tmp_time);
             }
             else{
                 rects[target_id][source_id].transition().duration(1000).attr("fill", "#EE2C2C");
                 rects[target_id][source_id].select("title")
-                                        .text("source ip:" + tmp_source + " target ip:" +
-                                            tmp_target + " state:" + tmp_state + " user:"
-                                            + tmp_user + " time:" + tmp_time);
+                                        .text("source ip:" + tmp_source + "\ntarget ip:" +
+                                            tmp_target + "\nstate:" + tmp_state + "\nuser:"
+                                            + tmp_user + "\ntime:" + tmp_time);
             }
         }
 
