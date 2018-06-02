@@ -59,7 +59,8 @@ html {
   display: none;
 }
 #page-content-wrapper {
-  padding-top: 70px;
+  padding-top: 30px;
+  padding-bottom: 40px;
   width: 100%;
 }
 /*-------------------------------*/

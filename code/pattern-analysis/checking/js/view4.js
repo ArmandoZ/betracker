@@ -16,11 +16,12 @@
         .padding(0.05);
 
     var y = d3.scaleLinear()
-        .domain([0,1]) 
         .rangeRound([height, 0]);
 
     var colorPlain = ["#bf6c00", "#8b7898", "#889bb5"];
     var colorHighlight = ["#ffa640", "#c7a9f5", "#aaeafc"];
+
+    var deptState = [true, true, true]
 
     var z = d3.scaleOrdinal()
         .range(colorPlain);
@@ -34,10 +35,7 @@
     var legend;
         
     var keys = ["engineering", "finance", "hr"];
-
-    var avgData = new Array();
-    avgData.push({});
-    avgData.push({});
+    // var keys = ["engineering", "finance", "hr"];
 
     function clear() {
         svg.selectAll('*').remove();
@@ -54,6 +52,7 @@
                     .attr("class","tooltip") //用于css设置类样式  
                     .attr("opacity",0.0); 
 
+        y.domain(d3.extent(croppedData4, function(d) { return 1.1 * Math.max(d.engineering, d.finance, d.hr); }));
         x0.domain(croppedData4.map(function(d) { return d.time; }));
         x1.domain(keys).rangeRound([0, x0.bandwidth()]);
 
@@ -74,24 +73,24 @@
 
         g.append("g")
             .attr("class", "axis")
-            .attr("stroke", "#fff")
+            .attr("stroke", "#bba")
             .attr("transform", "translate(0," + height + ")")
             .call(d3.axisBottom(x0));
 
         g.append("g")
             .attr("class", "axis")
-            .attr("stroke", "#fff")
-            .call(d3.axisLeft(y).ticks(null, "%"))
+            .attr("stroke", "#bba")
+            .call(d3.axisLeft(y).ticks(10))
 
         legend = g.append("g")
             .attr("font-family", "sans-serif")
             .attr("font-size", 10)
-            .attr("fill", "#fff")
+            .attr("fill", "#bba")
             .attr("text-anchor", "end")
             .selectAll("g")
-            .data(["研发 平均in: " + avgData[0].eng_mean + ", 平均out: " + avgData[1].eng_mean, 
-            "财务 平均in: " + avgData[0].finance_mean + ", 平均out: " + avgData[1].finance_mean, 
-            "人事 平均in: " + avgData[0].hr_mean + ", 平均out: " + avgData[1].hr_mean])
+            .data(["研发", 
+            "财务", 
+            "人事"])
             .enter().append("g")
             .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
@@ -103,36 +102,57 @@
 
         legend.append("text")
             .attr("x", width - 24)
-            .attr("fill", "#fff")
+            .attr("fill", "#bba")
             .attr("y", 9.5)
             .attr("dy", "0.32em")
             .text(function(d) { return d; });
     }
 
-    d3.json("../output_checkin.json", function(error, data) {
-        if (error) throw error;
-        // console.log(data)
-        
-		for (var i=1; i<data.length; i++) {
-            if (i != 0 && data[i]["engineering"] >= croppedData4[i-1]["engineering"]) {
-                croppedData4[i-1] = data[i];
-            }
-        }
-        avgData[0] = data[0];
-        updatebars();
-    });
+    var curDay = 1;
 
-    d3.json("../output_checkout.json", function(error, data) {
-        if (error) throw error;
-        // console.log(data)
-        
-		for (var i=1; i<data.length; i++) {
-            if (i != 0 && data[i]["engineering"] >= croppedData4[i-1]["engineering"]) {
-                croppedData4[i-1] = data[i];
+
+    function onCheckChanged(day) {
+        curDay = day;
+        d3.json("../output_checkin_days.json", function(error, data) {
+            if (error) throw error;
+            console.log(data)
+            
+            for (var i=0; i<data[day].length; i++) {
+                if (data[day][i]["engineering"] >= croppedData4[i]["engineering"]) {
+                    croppedData4[i] = data[day][i];
+                    // if (!deptState[0]) {
+                    //     croppedData4[i] = 0
+                    // }
+                }
             }
-        }
-        avgData[1] = data[0];
-        updatebars();
+            updatebars();
+        });
+    
+        d3.json("../output_checkout_days.json", function(error, data) {
+            if (error) throw error;
+            // console.log(data)
+            
+            for (var i=0; i<data[day].length; i++) {
+                if (data[day][i]["engineering"] >= croppedData4[i]["engineering"]) {
+                    croppedData4[i] = data[day][i];
+                }
+            }
+            updatebars();
+        });
+    }
+
+    onCheckChanged(1);
+
+    document.getElementById('choose_day')
+        .addEventListener('change',function(){
+            var curr_day = this.value;
+            croppedData4 = new Array();
+            console.log(croppedData4)
+            for (var i = 0; i < 24; i++) {
+                croppedData4.push({"engineering": 0});
+            }
+            console.log(croppedData4)
+            onCheckChanged(parseInt(curr_day.slice(8, 10)) - 1)
     });
 
 

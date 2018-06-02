@@ -5,9 +5,10 @@
 }
 
 .axis path,
-.axis line {
+.axis line,
+g.tick > line {
   fill: none;
-  stroke: #000;
+  stroke: #bba;
   shape-rendering: crispEdges;
 }
 .outer-div {
@@ -100,6 +101,6 @@
     fill: steelblue;
 }
 
-.axis path {
-    display: none;
+.domain {
+    stroke: #bba;
 }

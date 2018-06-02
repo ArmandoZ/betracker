@@ -21,7 +21,7 @@
 	function drawView(userId) {
         // console.log(curData)
         svg = d3.select("#view2_svg"),
-        margin = {top: 20, right: 20, bottom: 30, left: 40},
+        margin = {top: 30, right: 20, bottom: 30, left: 40},
         width = +svg.attr("width") - margin.left - margin.right,
         height = +svg.attr("height") - margin.top - margin.bottom,
         g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -37,7 +37,7 @@
             .y(function(d) { return y(d.time); });
     
         x.domain([1, 31]);
-        y.domain(d3.extent(curData, function(d) { return d.time; }));
+        y.domain([parseTime("05:30:00"), parseTime("09:30:00")]);
 
         // console.log(y.domain());
 
@@ -47,32 +47,43 @@
       
         g.append("g")
             .attr("transform", "translate(0," + height + ")")
-            .call(xAxis)
-            .attr("stroke", "#fff")
-            .style("font-size", "14px")
+            .call(xAxis.ticks(10))
+            .attr("stroke", "#bba")
+            .style("font-size", "10px")
             .append("text")
-            .attr("fill", "#fff")
-            .attr("transform", "translate(" + width / 2 + ", -180)")
+            .attr("fill", "#bba")
+            .style("font-size", "14px")
+            .attr("transform", "translate(" + (30 + width / 2) + ", -180)")
             .attr("y", 6)
             .attr("dy", "0.71em")
             .attr("text-anchor", "end")
-            .text("" + userId)
+            .text("员工Id：" + userId)
           .select(".domain")
             .remove();
       
         g.append("g")
-            .call(yAxis)
-            .attr("stroke", "#fff")
+            .call(yAxis.ticks(10))
+            .attr("stroke", "#bba")
             .style("font-size", "8px");
       
         g.append("path")
             .datum(curData)
             .attr("fill", "none")
-            .attr("stroke", "#00CED1")
+            .attr("stroke", "#117e80")
             .attr("stroke-linejoin", "round")
             .attr("stroke-linecap", "round")
             .attr("stroke-width", 1.5)
             .attr("d", line);
+        
+        svg.selectAll(".dot")
+            .data(curData)
+            .enter().append("circle")
+            .attr("class", "dot")
+            .attr("r", 3.5)
+            .attr("transform", "translate(40,30)")
+            .attr("cx", function(d) { return x(d.date); })
+            .attr("cy", function(d) { return y(d.time); })
+            .attr("fill", "#00CED1");
 	}
 
 	function reloadView(userId) {
