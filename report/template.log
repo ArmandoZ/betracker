@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.7.21)  2 JUN 2018 23:33
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.7.21)  3 JUN 2018 00:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1544,38 +1544,38 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 ) (./template.aux)
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 144.
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 144.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 144.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 148.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 148.
  (c:/texlive/2017/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 144.
-LaTeX Font Info:    Try loading font information for TU+ptm on input line 144.
-LaTeX Font Info:    No file TUptm.fd. on input line 144.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Try loading font information for TU+ptm on input line 148.
+LaTeX Font Info:    No file TUptm.fd. on input line 148.
 
 
 LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 144.
+(Font)              using `TU/lmr/m/n' instead on input line 148.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 144.
-LaTeX Info: Redefining \microtypecontext on input line 144.
+LaTeX Info: Redefining \selectfont on input line 148.
+LaTeX Info: Redefining \microtypecontext on input line 148.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1623,12 +1623,12 @@ Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 99.
 . 
 . Could not resolve font "Microsoft YaHei/I" (it probably doesn't exist).
 .................................................
-LaTeX Font Info:    Try loading font information for TU+phv on input line 152.
-LaTeX Font Info:    No file TUphv.fd. on input line 152.
+LaTeX Font Info:    Try loading font information for TU+phv on input line 156.
+LaTeX Font Info:    No file TUphv.fd. on input line 156.
 
 
 LaTeX Font Warning: Font shape `TU/phv/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 152.
+(Font)              using `TU/lmr/m/n' instead on input line 156.
 
 (c:/texlive/2017/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
 File: mt-LatinModernRoman.cfg 2013/03/13 v1.0 microtype config. file: Latin Mod
@@ -1661,7 +1661,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 15
-2.
+6.
 
 (c:/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
@@ -1671,41 +1671,38 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 15
-2.
+6.
 
 (c:/texlive/2017/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 15
-2.
+6.
 
 (c:/texlive/2017/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 15
-2.
+6.
 
 (c:/texlive/2017/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 152.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 156.
 
 
 (c:/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12.045> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 152.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 156.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 152.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 156.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 152.
-
-
-LaTeX Warning: No \author given.
-
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 156.
 \abstractwidth=\skip89
 File: pictures/abstract.png Graphic file (type QTm)
+
 <use  "pictures/abstract.png" >
 Package microtype Info: Loading generic settings for font family
 (microtype)             `SimSun' (encoding: TU).
@@ -1714,38 +1711,38 @@ Package microtype Info: Loading generic settings for font family
 
 
 LaTeX Font Warning: Font shape `TU/phv/bx/n' undefined
-(Font)              using `TU/phv/m/n' instead on input line 152.
+(Font)              using `TU/phv/m/n' instead on input line 156.
 
 File: diamondrule.eps Graphic file (type eps)
 <diamondrule.eps>
 
 LaTeX Font Warning: Font shape `TU/phv/bx/sc' undefined
-(Font)              using `TU/phv/bx/n' instead on input line 152.
+(Font)              using `TU/phv/bx/n' instead on input line 156.
 
 
 LaTeX Font Warning: Font shape `TU/MicrosoftYaHei(0)/bx/sc' undefined
-(Font)              using `TU/MicrosoftYaHei(0)/bx/n' instead on input line 152
+(Font)              using `TU/MicrosoftYaHei(0)/bx/n' instead on input line 156
 .
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.52812> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 152.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 156.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 152.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 156.
 
 LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 152.
+(Font)              using `TU/ptm/m/n' instead on input line 156.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.53937> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 158.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 162.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 158.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 162.
 [1
 
 
 ]
 
 LaTeX Font Warning: Font shape `TU/ptm/bx/n' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 198.
+(Font)              using `TU/ptm/m/n' instead on input line 202.
 
 File: pictures/5-1.png Graphic file (type QTm)
 <use  "pictures/5-1.png" >
@@ -1768,12 +1765,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 25272 strings out of 493005
- 502577 string characters out of 6137956
- 573485 words of memory out of 5000000
- 28939 multiletter control sequences out of 15000+600000
- 22908 words of font info for 81 fonts, out of 8000000 for 9000
+ 25315 strings out of 493005
+ 505252 string characters out of 6137956
+ 575028 words of memory out of 5000000
+ 28979 multiletter control sequences out of 15000+600000
+ 22932 words of font info for 84 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 52i,15n,68p,10517b,2044s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,15n,68p,10517b,2048s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on template.pdf (3 pages).

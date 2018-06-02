@@ -81,29 +81,33 @@
 \vgtcpapertype{please specify}
 
 %% Paper title.
-\title{公司内部威胁情报分析}
+\title{VizBoard - 公司内部威胁情报可视分析}
 
 %% This is how authors are specified in the journal style
 
 %% indicate IEEE Member or Student Member in form indicated below
 %\author{Roy G. Biv, Ed Grimley, \textit{Member, IEEE}, and Martha Stewart}
-%\authorfooter{
-%% insert punctuation at end of each item
-%\item
-% Roy G. Biv is with Starbucks Research. E-mail: roy.g.biv@aol.com.
-%\item
-% Ed Grimley is with Grimley Widgets, Inc.. E-mail: ed.grimley@aol.com.
-%\item
-% Martha Stewart is with Martha Stewart Enterprises at Microsoft
-% Research. E-mail: martha.stewart@marthastewart.com.
-%}
+\author{朱肇国, 徐明皓, 植禹衡, 李森, 孙建凯}
+\authorfooter{
+% insert punctuation at end of each item
+\item
+ 朱肇国. 上海交通大学. E-mail: armando@sjtu.edu.cn.
+\item
+ 徐明皓. 上海交通大学. E-mail: xuminghao118@sjtu.edu.cn.
+\item
+ 植禹衡. 上海交通大学. E-mail: zyh1996@sjtu.edu.cn.
+\item
+ 李森. 上海交通大学. E-mail: 13162054619@163.com.
+\item
+ 孙建凯. 上海交通大学. E-mail: jiankai@sjtu.edu.cn.
+}
 
 %other entries to be set up for journal
 \shortauthortitle{Biv \MakeLowercase{\textit{et al.}}: Global Illumination for Fun and Profit}
 %\shortauthortitle{Firstauthor \MakeLowercase{\textit{et al.}}: Paper Title}
 
 %% Abstract section.
-\abstract{
+\abstract{通过数据理解企业运行是非常重要的方式，可视化和可视分析是理解数据的最佳手段，发觉数据的真正价值在于分析。通过数据进行企业决策，安全形势评估，其核心技术都是只是提取。可视化要求数据本身是完整的、正确的、静态的、清晰的和结构化的，然而复杂数据自身的一些特点也使得它难以被自动分析，包括空间异质性、空间自相关和空间多尺度。我们的项目强调以用户为中心的可视化与可视分析方法，借助ECharts.js等可视化库，采用平行坐标图、弦图、像素图、力引导图等方式，通过登录日志、网页访问日志、TCPLOG日志、邮件日志、打卡日志，分析了企业的财务部门、人力资源部门、研发部门的组织结构、日常工作行为、异常事件及其关联。
 } % end of abstract
 
 %% Keywords that describe your work. Will show as 'Index Terms' in journal
@@ -124,12 +128,12 @@
 \teaser{
   \centering
   \includegraphics[width=\linewidth]{pictures/abstract.png}
-  \caption{概要：按逆时针方向从左上图分别表示xx, 签到情况, 邮件往来情况}
+  \caption{按逆时针方向从左上图分别表示某时间段内服务器登录情况, 签到情况, 邮件往来情况}
 	\label{fig:teaser}
 }
 
 %% Uncomment below to disable the manuscript note
-%\renewcommand{\manuscriptnotetxt}{}
+\renewcommand{\manuscriptnotetxt}{}
 
 %% Copyright space is enabled by default as required by guidelines.
 %% It is disabled by the 'review' option or via the following command:
@@ -195,7 +199,7 @@ E=E_s+\sum_{i=1}^{n}\sum_{j=1}^{n}\frac{rw_iw_j}{d(i,j)^2}
 
 \begin{algorithm}
 	\BlankLine
-	\caption{力引导布局伪代码}\label{alg:1}
+	\caption{力引导布局算法}\label{alg:1}
 	\BlankLine
 	设置节点的初始速度为$(0,0)$\\
 	设置节点的初始位置为任意但不重叠的位置\\

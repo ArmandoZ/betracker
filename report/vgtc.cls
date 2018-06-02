@@ -727,14 +727,14 @@ Manuscript received xx xxx. 201x; accepted xx xxx. 201x. Date of Publication xx 
        \leftskip = 0.33in \rightskip = \leftskip%
        \ifx\vgtc@abstxt\vgtc@empty \else%
             \begingroup%
-                {\bfseries Abstract}---\vgtc@abstxt%
+                {\bfseries 摘要}---\vgtc@abstxt%
             \endgroup\par%
         \fi%
         \ifx\vgtc@keywords\vgtc@empty \else%
             \begingroup%
                 %{\normalsize\vgtc@absfont {\bfseries Keywords - } \vgtc@keywords}%
                 \vspace{0.5\baselineskip}%
-                \par\noindent \textbf{Index Terms}---\vgtc@keywords%
+                \par\noindent \textbf{关键字}---\vgtc@keywords%
             \endgroup\par%
         \fi%
 %%          \ifx\vgtc@indexterms\vgtc@empty \else%
