@@ -14,11 +14,12 @@
 
     .foreground path {
         fill: none;
+        opacity: 0.3;
         /*stroke: steelblue;*/
     }
 
     .brush .extent {
-        fill-opacity: .3;
+        fill-opacity: .5;
         stroke: #fff;
         shape-rendering: crispEdges;
     }
@@ -32,31 +33,35 @@
 
     .axis text {
         text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
-        cursor: move;
+        /*cursor: move;*/
     }
 
 </style>
 <body>
+<button onclick="reset_visibility()"> Reset </button>
+<p id="id_display">
+    Click on a curve.
+</p>
 <script src="//d3js.org/d3.v3.js"></script>
 <script>
 
     var margin = {top: 30, right: 10, bottom: 10, left: 10},
-        width = 2000 - margin.left - margin.right,
+        width = 1500 - margin.left - margin.right,
         height = 150  - margin.top - margin.bottom,
-        total_height = 4000 - margin.top - margin.bottom;
+        change_line_interval = 10,
+        total_height = (height + margin.top + margin.bottom) * Math.ceil(345 / change_line_interval) ;
 
     var x = d3.scale.ordinal().rangePoints([0, width], 1),
         y = {},
         dimensions,
         dimensions_index,
-        change_line_interval = 15,
         dragging = {};
 
     var group_names = {"eng":0, "engLeader":1, "finance":2, "hr":3, "boss":4};
         // group_name_idx = group_names.map(function (value, index) { return index; });
 
-    var line = d3.svg.line()
-            .interpolate("cardinal"),
+    var line = d3.svg.line(),
+            // .interpolate("cardinal"),
         axis = d3.svg.axis().orient("left"),
         background,
         foreground,
@@ -68,12 +73,13 @@
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    var offset = 2;
+    var offset = 2,
+        end_offset = 2 + 345;
 
     d3.json("web_counts.json", function(error, cars) {
         // Extract the list of dimensions and create a scale for each.
         // console.log(cars.slice(1));
-        dimensions = cars[0].slice(offset);
+        dimensions = cars[0].slice(offset, end_offset);
         dimensions_index = dimensions.map(function (value, index) { return index; });
         console.log(dimensions_index);
         dimensions_index.forEach(function(d) {
@@ -84,7 +90,7 @@
                 .range([height + Math.floor(d / change_line_interval) * (height+margin.bottom+margin.top),
                     Math.floor(d / change_line_interval) * (height+margin.bottom+margin.top)])
         });
-        var range = Array.from(Array(change_line_interval).keys())//_.range(change_line_interval);//Array(change_line_interval).keys().map(function (value, index) { return index; });
+        var range = Array.from(Array(change_line_interval).keys());//_.range(change_line_interval);//Array(change_line_interval).keys().map(function (value, index) { return index; });
         console.log(range);
         x.domain(range);// = d3.keys(cars[0])//d3.keys(cars[0])
         console.log(x(0));
@@ -111,9 +117,30 @@
             .attr("d", path)
             .attr("stroke-width", "2")
             .attr("stroke", function (d) {
-                // console.log([d[1], color(group_names[d[1]])]);
+                console.log([d[1], color(group_names[d[1]])]);
                 return color(group_names[d[1]]);
+            })
+            .on("click", function (d) {
+                // alert(d[0]);
+                foreground.style("display", "none");
+                this.style.display = null;
+                document.getElementById("id_display").innerHTML = "选中的ID: " + d[0];
+            })
+            .on("mouseover", function (d) {
+                // alert(d[0]);
+                // foreground.style("display", null);
+                this.style.strokeWidth = "4";
+            })
+            .on("mouseout", function (d) {
+                // alert(d[0]);
+                // foreground.style("display", null);
+                // this.style("display", );
+                this.style.strokeWidth = "2";
             });
+            // .append("title")
+            // .text(function (d) {
+            //     return d[0];
+            // });
             // .append("title")
             // .text(function (d) {
             //     return d[0];
@@ -172,7 +199,7 @@
         g.append("g")
             .attr("class", "brush")
             .each(function(d) {
-                d3.select(this).call(y[d].brush = d3.svg.brush().y(y[d]).on("brushstart", brushstart).on("brush", brush));
+                d3.select(this).call(y[d].brush = d3.svg.brush().y(y[d]).on("brush", brush));//on("brushstart", brushstart).
             })
             .selectAll("rect")
             .attr("x", -8)
@@ -198,7 +225,7 @@
             }));
             // console.log([d[0], dimensions.map(function(p, i) { return [x(i), y[p](d[i+2])]; })]);
             // console.log(l);
-            path_list.push(l)
+            path_list.push(l);
         }
         return path_list;//line(dimensions.map(function(p, i) { return [x(p), y[p](d[i+2])]; }));
     }
@@ -223,9 +250,26 @@
                 return extents[i][0] <= d[p+offset] && d[p+offset] <= extents[i][1];
             });
             console.log([d[0], display]);
-            var sentive_ids = ['1173'];
-            var id_found = sentive_ids.includes(d[0]);
-            return  id_found ? null : "none";
+
+            return  display ? this.style.display : "none";
+        });
+    }
+
+    function reset_visibility() {
+        var sentive_ids = [1007 ,
+        1013 ,
+        1059 ,
+        1098 ,
+        1149,
+        1207 ,
+        1420 ,
+        1421 ,
+        1456 ,
+        1498
+            ].map(function (value) { return value.toString(); });//['1444'];
+        // var id_found = sentive_ids.includes(d[0])
+        foreground.style("display", function(d) {
+            return sentive_ids.includes(d[0]) ? null : "none";
         });
     }
 
