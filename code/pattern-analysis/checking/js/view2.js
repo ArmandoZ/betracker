@@ -37,7 +37,7 @@
             .y(function(d) { return y(d.time); });
     
         x.domain([1, 31]);
-        y.domain([parseTime("05:30:00"), parseTime("09:30:00")]);
+        y.domain([parseTime("05:30:00"), parseTime("10:00:00")]);
 
         // console.log(y.domain());
 
