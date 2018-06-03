@@ -1,0 +1,107 @@
+
+.axis text {
+  font: 10px sans-serif;
+  fill:black;
+}
+
+.axis path,
+.axis line,
+g.tick > line {
+  fill: none;
+  stroke: #bba;
+  shape-rendering: crispEdges;
+}
+.outer-div {
+	/* background-color: #222; */
+	border-radius: 7px;
+	border: 2px solid rgb(199, 199, 199);
+}
+
+.block-div {
+	height: 100%;
+	border-radius: 7px;
+}
+
+#page-content-wrapper {
+	min-height: 800px;
+	min-width: 1440px;
+	width: 1440px;
+	height: 800px;
+}
+
+#wrapper {
+	min-height: 800px;
+	height: 100%;
+}
+
+.container {
+	min-height: 730px;
+	height: 100%;
+	padding: 0 0 0 0;
+}
+
+.tooltip {
+	background-color: #55555598;
+	padding: 5 5 5 5;
+	width: 100px;
+	border-radius: 7px;
+	border: 2px solid rgb(199, 199, 199);
+}
+
+/* .tooltip->p {
+	font
+} */
+
+#top-div{
+	float: left;	
+	width: 100%;
+	height: 40%;
+}
+#bottom-div{
+	float: left;	
+	width: 100%;
+	height: 60%;	
+}
+#bottom-left-div{
+	float: left;	
+	width: 55%;
+	height: 100%;	
+}
+#bottom-right-div{
+	float: left;	
+	width: 45%;
+	height: 100%;	
+}
+#bottom-right-up-div{
+	float: left;	
+	width: 100%;
+	height: 50%;	
+}
+#bottom-right-down-div{
+	float: left;	
+	width: 100%;
+	height: 50%;	
+}
+
+.btn-div{
+	margin:5px;
+	line-height:26px
+}
+#view2_btn{
+	height:26px;
+	margin: -26px 0 0;
+}
+
+#view2{
+	overflow:hidden;
+	bottom:0px;
+}
+
+
+.bar {
+    fill: steelblue;
+}
+
+.domain {
+	stroke: #bba;
+}

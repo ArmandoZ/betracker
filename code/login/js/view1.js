@@ -4,7 +4,7 @@ function View1(Observer) {
     var $bmDiv=$("#bottom-div");
     var svgwidth=$bmDiv.width();
     var svgheight=$bmDiv.height();
-    var margin = {top: 10, right: 20, bottom: 10, left: 20};
+    var margin = {top: 10, right: 20, bottom: 20, left: 50};
     var width = svgwidth - margin.left - margin.right;
     var height = svgheight - margin.top - margin.bottom;
 
@@ -21,6 +21,11 @@ function View1(Observer) {
 
     var record_data = {};
     var ip_data = {};
+
+    var tooltip = d3.select("body").append("div")
+    .attr("class","tooltip") //用于css设置类样式
+    .attr("opacity",0.0);
+
 
     // initialize the boxes as rectangle
     function init(){
@@ -57,9 +62,27 @@ function View1(Observer) {
                     .attr("y", start_y + i * interval_y)
                     .attr("width", interval_x)
                     .attr("height", interval_y)
-                    .attr("fill", "#E6E6FA")
-                    .attr("stroke", "#FFFACD")
-                    .append("title");
+                    .attr("fill", "#575750")
+                    .attr("stroke", "#252522")
+                    .data([i * 10000 + j])
+                    .on("mouseover",function(d,idx) {
+                        var a = d3.select(this)
+                        var title = a._groups[0][0].childNodes[0].textContent
+                        console.log(title)
+                        var col = a._groups[0][0].__data__ % 10000
+                        var row = a._groups[0][0].__data__ / 10000
+                        var str = "<p>" + title + '</p>';
+                        tooltip.html(str)
+                        //设置tooltip的位置(left,top 相对于页面的距离)
+                                .style("left",(d3.event.pageX)+"px")
+                                .style("top",(d3.event.pageY+20)+"px")
+                                .style("opacity",1.0);
+                    })
+                    .on("mouseout", function(d, idx) {
+                        tooltip.style("opacity",0.0);
+                    })
+                    .append("title")
+                    ;
             }
         }
 
@@ -80,10 +103,12 @@ function View1(Observer) {
     }
 
     function draw_box(day, interval){
+        svg.selectAll("g").remove();
+        svg.selectAll("circle").remove();
         // recover the boxes
         for (var i = 0; i < num_y; i++){
             for (var j = 0; j < num_x; j++){
-                rects[i][j].attr("fill", "#E6E6FA");
+                rects[i][j].attr("fill", "#575750");
                 rects[i][j].select("title")
                         .text("");
             }
@@ -107,18 +132,130 @@ function View1(Observer) {
             if (tmp_state == "success"){
                 rects[target_id][source_id].transition().duration(1000).attr("fill", "#7CFC00");
                 rects[target_id][source_id].select("title")
-                                        .text("source ip:" + tmp_source + " target ip:" +
-                                            tmp_target + " state:" + tmp_state + " user:"
-                                            + tmp_user + " time:" + tmp_time);
+                                        .text("source ip:" + tmp_source + "\ntarget ip:" +
+                                            tmp_target + "\nstate:" + tmp_state + "\nuser:"
+                                            + tmp_user + "\ntime:" + tmp_time);
             }
             else{
                 rects[target_id][source_id].transition().duration(1000).attr("fill", "#EE2C2C");
                 rects[target_id][source_id].select("title")
-                                        .text("source ip:" + tmp_source + " target ip:" +
-                                            tmp_target + " state:" + tmp_state + " user:"
-                                            + tmp_user + " time:" + tmp_time);
+                                        .text("source ip:" + tmp_source + "\ntarget ip:" +
+                                            tmp_target + "\nstate:" + tmp_state + "\nuser:"
+                                            + tmp_user + "\ntime:" + tmp_time);
             }
         }
+
+    }
+
+    function draw_person(person_id){
+
+        svg.selectAll("rect").remove();
+        svg.selectAll("circle").remove();
+
+        var person_data = {};
+        for (date in record_data) {
+            person_data[date] = {}
+            for (interval in record_data[date]) {
+                person_data[date][interval] = new Array();
+                if (record_data[date][interval].length != 0) {
+                    for (i = 0; i < record_data[date][interval].length; i++){
+                        var item = record_data[date][interval][i];
+                        if (item[3] == person_id){
+                            var tmp_tunple = [item[0], item[1], item[2], item[4]];
+                            person_data[date][interval].push(tmp_tunple);
+                        }
+                    }
+                }
+            }
+        }
+
+        console.log(1);
+
+        var data = new Array();
+
+        for (date in person_data) {
+            var curRow = new Object();
+            curRow["time"] = date.slice(5, 10);
+            curRow["data"] = new Array();
+            for (interval in person_data[date]){
+                var tmp_interval = {};
+                tmp_interval["interval"] = interval;
+                tmp_interval["interval_data"] = person_data[date][interval];
+                curRow["data"].push(tmp_interval);
+            }
+            data.push(curRow)
+        }
+
+        var compare_date = function (x, y) {//比较函数
+            if (x.time < y.time) {
+                return -1;
+            } else if (x.time > y.time) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+
+        data = data.sort(compare_date);
+
+        var compare_interval = function(x, y){
+            if (x.interval.slice(0, 5) < y.interval.slice(0, 5)) {
+                return -1;
+            } else if (x.interval.slice(0, 5) > y.interval.slice(0, 5)) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+
+        for (i = 0; i < data.length; i++){
+            var tmp_data = data[i]["data"];
+            var sorted_data = tmp_data.sort(compare_interval);
+            data[i]["data"] = sorted_data;
+        }
+
+        var x = d3.scaleBand()
+            .rangeRound([0, width]);
+
+        var y = d3.scaleBand()
+            .rangeRound([height, 0]);
+
+        x.domain(data.map(function(d) { return d.time; }));
+        y.domain(data[0]["data"].map(function(d) { return d.interval.slice(0, 5); }));
+
+        var g = svg.append("g");
+
+        g.append("g")
+        .attr("class", "axis")
+        .attr("stroke", "#fff")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x).tickValues(x.domain().filter(function(d,i){ return !(i%3)})))
+        .attr("font-size", "4px");
+
+        g.append("g")
+            .attr("class", "axis")
+            .attr("stroke", "#fff")
+            .call(d3.axisLeft(y).tickValues(y.domain().filter(function(d,i){ return !(i%6)})))
+            .attr("font-size", "4px");
+
+        for (i = 0; i < data.length; i++){
+            var tmp_data = data[i]["data"];
+            var tmp_date = data[i]["time"];
+            for (j = 0; j <tmp_data.length; j++){
+                var tmp_item = tmp_data[j];
+                if (tmp_item["interval_data"].length == 0){
+                    continue;
+                }
+                svg.append("circle")
+                    .attr("cx", 20 + x(tmp_date))
+                    .attr("cy", y(tmp_item["interval"].slice(0, 5)))
+                    .attr("r", 2)
+                    .attr("fill", "#00CED1")
+                    .append("title")
+                    .text(tmp_item["interval"] + ": " + tmp_item["interval_data"].length + "次");
+            }
+        }
+
 
     }
 
@@ -170,8 +307,18 @@ function View1(Observer) {
     document.getElementById('choose_day')
         .addEventListener('change',function(){
             curr_day = this.value;
-
+            init();
+            init_box();
             draw_box(curr_day, curr_interval);
+    });
+
+    // add the event listener for search button
+    document.getElementById('search_button')
+        .addEventListener('click',function(){
+            var obj = document.getElementById("searchbox");
+            var tmp_id = obj.value;
+            console.log(tmp_id);
+            draw_person(tmp_id);
     });
 
     Observer.addView(view1);

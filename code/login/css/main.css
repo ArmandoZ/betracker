@@ -1,6 +1,6 @@
 .tooltip{
     position: absolute;
-    width: 120px;
+    width: 180px;
     height: auto;
     font-family: simsun;
     font-size: 14px;
@@ -79,7 +79,12 @@ text.axis-worktime {
     width: 100%;
     height: 100%;
     padding: 0px;
-    background-color: #FFFACD;
+    background-color: #252522;
+}
+
+body,
+html {
+  background-color: #252522;
 }
 
 #main-div{
@@ -92,14 +97,14 @@ text.axis-worktime {
 	float: left;
 	width: 100%;
 	height: 20%;
-  background-color: #FFFACD;
+  background-color: #252522;
 }
 #middle-div{
   float: right;
   width: 100%;
   height: 40%;
   padding: 1%;
-  background-color: #FFFACD;
+  background-color: #252522;
 }
 #middle-left-div{
   float: left;
@@ -119,7 +124,7 @@ text.axis-worktime {
   width: 100%;
   height: 40%;
   padding: 3%;
-  background-color: #FFFACD;
+  background-color: #252522;
 }
 
 .btn-div{

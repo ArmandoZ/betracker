@@ -95,17 +95,17 @@ function View3(Observer) {
 
         g.append("g")
         .attr("class", "axis")
-        .attr("stroke", "#000")
+        .attr("stroke", "#fff")
         .attr("transform", "translate(0," + height + ")")
         .call(d3.axisBottom(x).tickValues(x.domain().filter(function(d,i){ console.log(i); return !(i%7)})))
         .attr("font-size", "4px");
       
         g.append("g")
             .call(d3.axisLeft(y))
-            .attr("stroke", "#000")
+            .attr("stroke", "#fff")
             .style("font-size", "8px")
           .append("text")
-            .attr("fill", "#000")
+            .attr("fill", "#fff")
             .attr("transform", "rotate(-90)")
             .attr("y", 6)
             .attr("dy", "0.71em")

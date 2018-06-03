@@ -1,0 +1,4528 @@
+[
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 3,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 2,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 2,
+            "finance": 4,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 25,
+            "finance": 8,
+            "hr": 3
+        },
+        {
+            "time": "18:30",
+            "engineering": 82,
+            "finance": 3,
+            "hr": 11
+        },
+        {
+            "time": "19:30",
+            "engineering": 70,
+            "finance": 6,
+            "hr": 1
+        },
+        {
+            "time": "20:30",
+            "engineering": 41,
+            "finance": 1,
+            "hr": 3
+        },
+        {
+            "time": "21:30",
+            "engineering": 20,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "22:30",
+            "engineering": 5,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 2,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 1,
+            "finance": 1,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 1,
+            "finance": 3,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 26,
+            "finance": 7,
+            "hr": 4
+        },
+        {
+            "time": "18:30",
+            "engineering": 88,
+            "finance": 6,
+            "hr": 8
+        },
+        {
+            "time": "19:30",
+            "engineering": 62,
+            "finance": 4,
+            "hr": 1
+        },
+        {
+            "time": "20:30",
+            "engineering": 41,
+            "finance": 2,
+            "hr": 3
+        },
+        {
+            "time": "21:30",
+            "engineering": 29,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "22:30",
+            "engineering": 3,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 1,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 2,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "15:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 1,
+            "finance": 6,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 23,
+            "finance": 13,
+            "hr": 2
+        },
+        {
+            "time": "18:30",
+            "engineering": 71,
+            "finance": 0,
+            "hr": 5
+        },
+        {
+            "time": "19:30",
+            "engineering": 80,
+            "finance": 1,
+            "hr": 2
+        },
+        {
+            "time": "20:30",
+            "engineering": 42,
+            "finance": 2,
+            "hr": 5
+        },
+        {
+            "time": "21:30",
+            "engineering": 23,
+            "finance": 0,
+            "hr": 2
+        },
+        {
+            "time": "22:30",
+            "engineering": 7,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 2,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "18:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "19:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "20:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "21:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "22:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 0,
+            "finance": 1,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "18:30",
+            "engineering": 5,
+            "finance": 1,
+            "hr": 2
+        },
+        {
+            "time": "19:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "20:30",
+            "engineering": 2,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "21:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "22:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "16:30",
+            "engineering": 1,
+            "finance": 4,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 22,
+            "finance": 7,
+            "hr": 0
+        },
+        {
+            "time": "18:30",
+            "engineering": 85,
+            "finance": 3,
+            "hr": 8
+        },
+        {
+            "time": "19:30",
+            "engineering": 75,
+            "finance": 4,
+            "hr": 4
+        },
+        {
+            "time": "20:30",
+            "engineering": 43,
+            "finance": 3,
+            "hr": 5
+        },
+        {
+            "time": "21:30",
+            "engineering": 16,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "22:30",
+            "engineering": 7,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 1,
+            "finance": 1,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 3,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 1,
+            "finance": 3,
+            "hr": 1
+        },
+        {
+            "time": "17:30",
+            "engineering": 25,
+            "finance": 11,
+            "hr": 2
+        },
+        {
+            "time": "18:30",
+            "engineering": 86,
+            "finance": 3,
+            "hr": 7
+        },
+        {
+            "time": "19:30",
+            "engineering": 64,
+            "finance": 5,
+            "hr": 6
+        },
+        {
+            "time": "20:30",
+            "engineering": 45,
+            "finance": 1,
+            "hr": 0
+        },
+        {
+            "time": "21:30",
+            "engineering": 22,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "22:30",
+            "engineering": 6,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "14:30",
+            "engineering": 2,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 3,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 0,
+            "finance": 3,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 20,
+            "finance": 6,
+            "hr": 2
+        },
+        {
+            "time": "18:30",
+            "engineering": 87,
+            "finance": 5,
+            "hr": 11
+        },
+        {
+            "time": "19:30",
+            "engineering": 76,
+            "finance": 8,
+            "hr": 2
+        },
+        {
+            "time": "20:30",
+            "engineering": 29,
+            "finance": 2,
+            "hr": 2
+        },
+        {
+            "time": "21:30",
+            "engineering": 26,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "22:30",
+            "engineering": 5,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 1,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "15:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 0,
+            "finance": 3,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 19,
+            "finance": 15,
+            "hr": 2
+        },
+        {
+            "time": "18:30",
+            "engineering": 82,
+            "finance": 2,
+            "hr": 10
+        },
+        {
+            "time": "19:30",
+            "engineering": 73,
+            "finance": 2,
+            "hr": 4
+        },
+        {
+            "time": "20:30",
+            "engineering": 44,
+            "finance": 1,
+            "hr": 1
+        },
+        {
+            "time": "21:30",
+            "engineering": 25,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "22:30",
+            "engineering": 6,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 4,
+            "finance": 0,
+            "hr": 2
+        },
+        {
+            "time": "16:30",
+            "engineering": 1,
+            "finance": 5,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 19,
+            "finance": 8,
+            "hr": 0
+        },
+        {
+            "time": "18:30",
+            "engineering": 83,
+            "finance": 5,
+            "hr": 9
+        },
+        {
+            "time": "19:30",
+            "engineering": 65,
+            "finance": 3,
+            "hr": 4
+        },
+        {
+            "time": "20:30",
+            "engineering": 52,
+            "finance": 2,
+            "hr": 1
+        },
+        {
+            "time": "21:30",
+            "engineering": 17,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "22:30",
+            "engineering": 8,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 2,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "18:30",
+            "engineering": 8,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "19:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "20:30",
+            "engineering": 2,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "21:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "22:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "15:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 2
+        },
+        {
+            "time": "18:30",
+            "engineering": 1,
+            "finance": 1,
+            "hr": 2
+        },
+        {
+            "time": "19:30",
+            "engineering": 4,
+            "finance": 1,
+            "hr": 1
+        },
+        {
+            "time": "20:30",
+            "engineering": 2,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "21:30",
+            "engineering": 5,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "22:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 2,
+            "finance": 4,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 24,
+            "finance": 12,
+            "hr": 4
+        },
+        {
+            "time": "18:30",
+            "engineering": 90,
+            "finance": 4,
+            "hr": 10
+        },
+        {
+            "time": "19:30",
+            "engineering": 67,
+            "finance": 1,
+            "hr": 4
+        },
+        {
+            "time": "20:30",
+            "engineering": 38,
+            "finance": 3,
+            "hr": 0
+        },
+        {
+            "time": "21:30",
+            "engineering": 26,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "22:30",
+            "engineering": 3,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 2,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 0,
+            "finance": 1,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 21,
+            "finance": 12,
+            "hr": 3
+        },
+        {
+            "time": "18:30",
+            "engineering": 81,
+            "finance": 3,
+            "hr": 9
+        },
+        {
+            "time": "19:30",
+            "engineering": 65,
+            "finance": 7,
+            "hr": 4
+        },
+        {
+            "time": "20:30",
+            "engineering": 49,
+            "finance": 1,
+            "hr": 2
+        },
+        {
+            "time": "21:30",
+            "engineering": 29,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "22:30",
+            "engineering": 5,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 3,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 2,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "16:30",
+            "engineering": 1,
+            "finance": 1,
+            "hr": 1
+        },
+        {
+            "time": "17:30",
+            "engineering": 24,
+            "finance": 13,
+            "hr": 4
+        },
+        {
+            "time": "18:30",
+            "engineering": 78,
+            "finance": 5,
+            "hr": 7
+        },
+        {
+            "time": "19:30",
+            "engineering": 79,
+            "finance": 3,
+            "hr": 1
+        },
+        {
+            "time": "20:30",
+            "engineering": 39,
+            "finance": 2,
+            "hr": 3
+        },
+        {
+            "time": "21:30",
+            "engineering": 26,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "22:30",
+            "engineering": 3,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 4,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 2,
+            "finance": 4,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 19,
+            "finance": 16,
+            "hr": 5
+        },
+        {
+            "time": "18:30",
+            "engineering": 81,
+            "finance": 3,
+            "hr": 10
+        },
+        {
+            "time": "19:30",
+            "engineering": 70,
+            "finance": 1,
+            "hr": 2
+        },
+        {
+            "time": "20:30",
+            "engineering": 43,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "21:30",
+            "engineering": 24,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "22:30",
+            "engineering": 5,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 4,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 0,
+            "finance": 1,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 2,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 1,
+            "finance": 4,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 23,
+            "finance": 14,
+            "hr": 0
+        },
+        {
+            "time": "18:30",
+            "engineering": 91,
+            "finance": 0,
+            "hr": 7
+        },
+        {
+            "time": "19:30",
+            "engineering": 69,
+            "finance": 3,
+            "hr": 5
+        },
+        {
+            "time": "20:30",
+            "engineering": 38,
+            "finance": 2,
+            "hr": 4
+        },
+        {
+            "time": "21:30",
+            "engineering": 26,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "22:30",
+            "engineering": 3,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 3,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "18:30",
+            "engineering": 9,
+            "finance": 0,
+            "hr": 2
+        },
+        {
+            "time": "19:30",
+            "engineering": 2,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "20:30",
+            "engineering": 2,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "21:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "22:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 0,
+            "finance": 2,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 0,
+            "finance": 6,
+            "hr": 2
+        },
+        {
+            "time": "18:30",
+            "engineering": 6,
+            "finance": 3,
+            "hr": 2
+        },
+        {
+            "time": "19:30",
+            "engineering": 2,
+            "finance": 4,
+            "hr": 0
+        },
+        {
+            "time": "20:30",
+            "engineering": 3,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "21:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "22:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 2,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 2,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 0,
+            "finance": 1,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 26,
+            "finance": 14,
+            "hr": 3
+        },
+        {
+            "time": "18:30",
+            "engineering": 87,
+            "finance": 5,
+            "hr": 9
+        },
+        {
+            "time": "19:30",
+            "engineering": 68,
+            "finance": 1,
+            "hr": 1
+        },
+        {
+            "time": "20:30",
+            "engineering": 35,
+            "finance": 2,
+            "hr": 3
+        },
+        {
+            "time": "21:30",
+            "engineering": 26,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "22:30",
+            "engineering": 6,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 1,
+            "finance": 1,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 4,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 1,
+            "finance": 1,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 25,
+            "finance": 11,
+            "hr": 3
+        },
+        {
+            "time": "18:30",
+            "engineering": 77,
+            "finance": 3,
+            "hr": 8
+        },
+        {
+            "time": "19:30",
+            "engineering": 73,
+            "finance": 4,
+            "hr": 1
+        },
+        {
+            "time": "20:30",
+            "engineering": 39,
+            "finance": 1,
+            "hr": 3
+        },
+        {
+            "time": "21:30",
+            "engineering": 27,
+            "finance": 0,
+            "hr": 2
+        },
+        {
+            "time": "22:30",
+            "engineering": 3,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 2,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 2,
+            "finance": 4,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 16,
+            "finance": 14,
+            "hr": 3
+        },
+        {
+            "time": "18:30",
+            "engineering": 89,
+            "finance": 4,
+            "hr": 8
+        },
+        {
+            "time": "19:30",
+            "engineering": 84,
+            "finance": 2,
+            "hr": 2
+        },
+        {
+            "time": "20:30",
+            "engineering": 32,
+            "finance": 0,
+            "hr": 3
+        },
+        {
+            "time": "21:30",
+            "engineering": 24,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "22:30",
+            "engineering": 4,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 2,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 2,
+            "finance": 1,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 23,
+            "finance": 15,
+            "hr": 3
+        },
+        {
+            "time": "18:30",
+            "engineering": 97,
+            "finance": 4,
+            "hr": 5
+        },
+        {
+            "time": "19:30",
+            "engineering": 65,
+            "finance": 3,
+            "hr": 5
+        },
+        {
+            "time": "20:30",
+            "engineering": 34,
+            "finance": 1,
+            "hr": 3
+        },
+        {
+            "time": "21:30",
+            "engineering": 27,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "22:30",
+            "engineering": 3,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 2,
+            "finance": 1,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "16:30",
+            "engineering": 1,
+            "finance": 3,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 24,
+            "finance": 10,
+            "hr": 3
+        },
+        {
+            "time": "18:30",
+            "engineering": 94,
+            "finance": 5,
+            "hr": 8
+        },
+        {
+            "time": "19:30",
+            "engineering": 59,
+            "finance": 4,
+            "hr": 3
+        },
+        {
+            "time": "20:30",
+            "engineering": 39,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "21:30",
+            "engineering": 28,
+            "finance": 0,
+            "hr": 2
+        },
+        {
+            "time": "22:30",
+            "engineering": 4,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 0,
+            "finance": 2,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 0,
+            "finance": 4,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 0,
+            "finance": 8,
+            "hr": 0
+        },
+        {
+            "time": "18:30",
+            "engineering": 5,
+            "finance": 4,
+            "hr": 2
+        },
+        {
+            "time": "19:30",
+            "engineering": 1,
+            "finance": 2,
+            "hr": 0
+        },
+        {
+            "time": "20:30",
+            "engineering": 3,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "21:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "22:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 0,
+            "finance": 3,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 1,
+            "finance": 9,
+            "hr": 0
+        },
+        {
+            "time": "18:30",
+            "engineering": 7,
+            "finance": 5,
+            "hr": 0
+        },
+        {
+            "time": "19:30",
+            "engineering": 1,
+            "finance": 3,
+            "hr": 0
+        },
+        {
+            "time": "20:30",
+            "engineering": 0,
+            "finance": 1,
+            "hr": 0
+        },
+        {
+            "time": "21:30",
+            "engineering": 2,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "22:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 1,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 2,
+            "finance": 2,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 25,
+            "finance": 12,
+            "hr": 4
+        },
+        {
+            "time": "18:30",
+            "engineering": 81,
+            "finance": 6,
+            "hr": 4
+        },
+        {
+            "time": "19:30",
+            "engineering": 74,
+            "finance": 1,
+            "hr": 6
+        },
+        {
+            "time": "20:30",
+            "engineering": 42,
+            "finance": 1,
+            "hr": 2
+        },
+        {
+            "time": "21:30",
+            "engineering": 18,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "22:30",
+            "engineering": 5,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 0,
+            "finance": 1,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "16:30",
+            "engineering": 0,
+            "finance": 4,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 20,
+            "finance": 10,
+            "hr": 2
+        },
+        {
+            "time": "18:30",
+            "engineering": 89,
+            "finance": 3,
+            "hr": 7
+        },
+        {
+            "time": "19:30",
+            "engineering": 69,
+            "finance": 5,
+            "hr": 3
+        },
+        {
+            "time": "20:30",
+            "engineering": 41,
+            "finance": 1,
+            "hr": 3
+        },
+        {
+            "time": "21:30",
+            "engineering": 24,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "22:30",
+            "engineering": 7,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 2,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 1,
+            "finance": 1,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 23,
+            "finance": 15,
+            "hr": 3
+        },
+        {
+            "time": "18:30",
+            "engineering": 89,
+            "finance": 2,
+            "hr": 10
+        },
+        {
+            "time": "19:30",
+            "engineering": 67,
+            "finance": 4,
+            "hr": 0
+        },
+        {
+            "time": "20:30",
+            "engineering": 36,
+            "finance": 1,
+            "hr": 0
+        },
+        {
+            "time": "21:30",
+            "engineering": 23,
+            "finance": 0,
+            "hr": 2
+        },
+        {
+            "time": "22:30",
+            "engineering": 4,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 1,
+            "finance": 0,
+            "hr": 1
+        },
+        {
+            "time": "15:30",
+            "engineering": 3,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 0,
+            "finance": 1,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 20,
+            "finance": 8,
+            "hr": 3
+        },
+        {
+            "time": "18:30",
+            "engineering": 82,
+            "finance": 7,
+            "hr": 5
+        },
+        {
+            "time": "19:30",
+            "engineering": 68,
+            "finance": 7,
+            "hr": 4
+        },
+        {
+            "time": "20:30",
+            "engineering": 44,
+            "finance": 0,
+            "hr": 3
+        },
+        {
+            "time": "21:30",
+            "engineering": 26,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "22:30",
+            "engineering": 3,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ],
+    [
+        {
+            "time": "00:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "01:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "02:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "03:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "04:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "05:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "06:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "07:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "08:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "09:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "10:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "11:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "12:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "13:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "14:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "15:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "16:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "17:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "18:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "19:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "20:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "21:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "22:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        },
+        {
+            "time": "23:30",
+            "engineering": 0,
+            "finance": 0,
+            "hr": 0
+        }
+    ]
+]

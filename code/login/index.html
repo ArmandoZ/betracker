@@ -45,7 +45,7 @@
           }
         }
       });
-      $( "#amount" ).val( $( "#slider-range-min" ).slider( "value" ) );
+      $( "#amount" ).val("00:00");
     });
     </script>
 
@@ -59,7 +59,7 @@
 <!--the main division-->
 <div id="main-div">
 	<div id="top-div" class="outer-div">
-        <select id="choose_day" class="selector_1">
+        <select id="choose_day" class="selector_1" style="margin-left: 50px;margin-top: 30px;">
             <option value="2017-11-01">2017-11-01 星期三</option>
             <option value="2017-11-02">2017-11-02 星期四</option>
             <option value="2017-11-03">2017-11-03 星期五</option>
@@ -91,12 +91,16 @@
             <option value="2017-11-29">2017-11-29 星期三</option>
             <option value="2017-11-30">2017-11-30 星期四</option>
         </select>
-        <p style="height:40px;"> </p>
+        <p style="height:10px;"> </p>
         <p>
-            <label for="amount">所选时间：</label>
+            <label for="amount" style="color: #fff; margin-left: 50px;">所选时间：</label>
             <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
+
+            <label for="amount" style="color: #fff; margin-left: 50px;">搜索员工：</label>
+            <input type="text" id="searchbox" style="border:0; color:#f6931f; font-weight:bold;">
+            <button type="button" id="search_button">Search</button>
         </p>
-        <div id="slider-range-min"></div>
+        <div id="slider-range-min" style="margin-left: 70px;margin-right: 70px;"></div>
 	</div>
 	<div id="middle-div" class="outer-div">
         <div id="middle-left-div">
