@@ -36,9 +36,51 @@
         /*cursor: move;*/
     }
 
+    input{
+        width:60px;
+        border:0;
+        border-bottom:1px solid #000;
+        text-align:center;
+    }
+
 </style>
 <body>
+<select id="choose_day" class="selector_1">
+    <option value="all">All together</option>
+    <option value="2017-11-01">2017-11-01 星期三</option>
+    <option value="2017-11-02">2017-11-02 星期四</option>
+    <option value="2017-11-03">2017-11-03 星期五</option>
+    <option value="2017-11-04">2017-11-04 星期六</option>
+    <option value="2017-11-05">2017-11-05 星期日</option>
+    <option value="2017-11-06">2017-11-06 星期一</option>
+    <option value="2017-11-07">2017-11-07 星期二</option>
+    <option value="2017-11-08">2017-11-08 星期三</option>
+    <option value="2017-11-09">2017-11-09 星期四</option>
+    <option value="2017-11-10">2017-11-10 星期五</option>
+    <option value="2017-11-11">2017-11-11 星期六</option>
+    <option value="2017-11-12">2017-11-12 星期日</option>
+    <option value="2017-11-13">2017-11-13 星期一</option>
+    <option value="2017-11-14">2017-11-14 星期二</option>
+    <option value="2017-11-15">2017-11-15 星期三</option>
+    <option value="2017-11-16">2017-11-16 星期四</option>
+    <option value="2017-11-17">2017-11-17 星期五</option>
+    <option value="2017-11-18">2017-11-18 星期六</option>
+    <option value="2017-11-19">2017-11-19 星期日</option>
+    <option value="2017-11-20">2017-11-20 星期一</option>
+    <option value="2017-11-21">2017-11-21 星期二</option>
+    <option value="2017-11-22">2017-11-22 星期三</option>
+    <option value="2017-11-23">2017-11-23 星期四</option>
+    <option value="2017-11-24">2017-11-24 星期五</option>
+    <option value="2017-11-25">2017-11-25 星期六</option>
+    <option value="2017-11-26">2017-11-26 星期日</option>
+    <option value="2017-11-27">2017-11-27 星期一</option>
+    <option value="2017-11-28">2017-11-28 星期二</option>
+    <option value="2017-11-29">2017-11-29 星期三</option>
+    <option value="2017-11-30">2017-11-30 星期四</option>
+</select>
 <button onclick="reset_visibility()"> Reset </button>
+<input type="text" name="enter" class="enter" value="" id="searching_id"/>
+<input type="button" value="click" OnClick="highlight()"/>
 <p id="id_display">
     Click on a curve.
 </p>
@@ -76,7 +118,13 @@
     var offset = 2,
         end_offset = 2 + 345;
 
-    d3.json("web_counts.json", function(error, cars) {
+    document.getElementById('choose_day')
+        .addEventListener('change', function () {
+            var selection = this.value;
+            draw(selection);
+        });
+
+    d3.json("data/web_counts_"+"all"+'.json', function(error, cars) {
         // Extract the list of dimensions and create a scale for each.
         // console.log(cars.slice(1));
         dimensions = cars[0].slice(offset, end_offset);
@@ -94,11 +142,7 @@
         console.log(range);
         x.domain(range);// = d3.keys(cars[0])//d3.keys(cars[0])
         console.log(x(0));
-        //     .filter();
-        // }));
-        // console.log(y);
-        // alert(dimensions);
-        // console.log(dimensions.map(function (value, index) { return x(index); }));
+        console.log(y[0](153));
 
         // Add grey background lines for context.
         background = svg.append("g")
@@ -117,7 +161,7 @@
             .attr("d", path)
             .attr("stroke-width", "2")
             .attr("stroke", function (d) {
-                console.log([d[1], color(group_names[d[1]])]);
+                // console.log([d[1], color(group_names[d[1]])]);
                 return color(group_names[d[1]]);
             })
             .on("click", function (d) {
@@ -137,18 +181,6 @@
                 // this.style("display", );
                 this.style.strokeWidth = "2";
             });
-            // .append("title")
-            // .text(function (d) {
-            //     return d[0];
-            // });
-            // .append("title")
-            // .text(function (d) {
-            //     return d[0];
-            // });
-
-
-        // foreground.selectAll('.foreground')
-        //     .select("title")
 
 
         // Add a group element for each dimension.
@@ -158,30 +190,6 @@
             .attr("class", "dimension")
             .attr("transform", function(d) { return "translate(" +
                 x(d % change_line_interval) + ")"; });
-            // .call(d3.behavior.drag()
-            //     .origin(function(d) { return {x: x(d)}; })
-            //     .on("dragstart", function(d) {
-            //         dragging[d] = x(d);
-            //         background.attr("visibility", "hidden");
-            //     })
-            //     .on("drag", function(d) {
-            //         dragging[d] = Math.min(width, Math.max(0, d3.event.x));
-            //         foreground.attr("d", path);
-            //         dimensions.sort(function(a, b) { return position(a) - position(b); });
-            //         x.domain(dimensions);
-            //         g.attr("transform", function(d) { return "translate(" + position(d) + ")"; })
-            //     })
-            //     .on("dragend", function(d) {
-            //         delete dragging[d];
-            //         transition(d3.select(this)).attr("transform", "translate(" + x(d) + ")");
-            //         transition(foreground).attr("d", path);
-            //         background
-            //             .attr("d", path)
-            //             .transition()
-            //             .delay(500)
-            //             .duration(0)
-            //             .attr("visibility", null);
-            //     }));
 
         // Add an axis and title.
         g.append("g")
@@ -206,6 +214,111 @@
             .attr("width", 16);
     });
 
+    function draw(selection) {
+        console.log("data/web_counts_"+selection+'.json');
+        d3.json("data/web_counts_"+selection+'.json', function(error, cars) {
+            // Extract the list of dimensions and create a scale for each.
+            // console.log(cars.slice(1));
+            dimensions = cars[0].slice(offset, end_offset);
+            dimensions_index = dimensions.map(function (value, index) { return index; });
+            console.log(dimensions_index);
+            dimensions_index.forEach(function(d) {
+                y[d] = d3.scale.linear()
+                    .domain(d3.extent(cars.slice(1), function (p) {
+                        return p[d+offset];
+                    }))
+                    .range([height + Math.floor(d / change_line_interval) * (height+margin.bottom+margin.top),
+                        Math.floor(d / change_line_interval) * (height+margin.bottom+margin.top)])
+            });
+            var range = Array.from(Array(change_line_interval).keys());//_.range(change_line_interval);//Array(change_line_interval).keys().map(function (value, index) { return index; });
+            console.log(range);
+            x.domain(range);// = d3.keys(cars[0])//d3.keys(cars[0])
+            console.log(x(0));
+            //     .filter();
+            // }));
+            console.log(y);
+            // alert(dimensions);
+            // console.log(dimensions.map(function (value, index) { return x(index); }));
+
+            // Add grey background lines for context.
+            background = svg
+                .select(".background")
+                .selectAll("path")
+                .data(cars.slice(1))
+                .attr("d", path);
+
+            // Add blue foreground lines for focus.
+            foreground = svg
+                .select(".foreground")
+                .selectAll("path")
+                .data(cars.slice(1))
+                .attr("d", path)
+                .attr("stroke-width", "2")
+                .attr("stroke", function (d) {
+                    // console.log([d[1], color(group_names[d[1]])]);
+                    return color(group_names[d[1]]);
+                })
+                .on("click", function (d) {
+                    // alert(d[0]);
+                    foreground.style("display", "none");
+                    this.style.display = null;
+                    document.getElementById("id_display").innerHTML = "选中的ID: " + d[0];
+                })
+                .on("mouseover", function (d) {
+                    // alert(d[0]);
+                    // foreground.style("display", null);
+                    this.style.strokeWidth = "4";
+                })
+                .on("mouseout", function (d) {
+                    // alert(d[0]);
+                    // foreground.style("display", null);
+                    // this.style("display", );
+                    this.style.strokeWidth = "2";
+                });
+            // .append("title")
+            // .text(function (d) {
+            //     return d[0];
+            // });
+            // .append("title")
+            // .text(function (d) {
+            //     return d[0];
+            // });
+
+
+            // foreground.selectAll('.foreground')
+            //     .select("title")
+
+
+            // Add a group element for each dimension.
+            var g = svg.selectAll(".dimension")
+                .data(dimensions_index)
+                .attr("class", "dimension")
+                .attr("transform", function(d) { return "translate(" +
+                    x(d % change_line_interval) + ")"; });
+
+            // Add an axis and title.
+
+                g.selectAll(".axis")
+                .each(function(d) { d3.select(this).call(axis.scale(y[d])); })
+                .append("text")
+                .style("text-anchor", "middle")
+                .attr("y", function (d) {
+                    return -9 + Math.floor( d / change_line_interval) * (height + margin.bottom + margin.top);
+                })
+                .text(function(d) { return dimensions[d]; })
+                .append("title");
+
+            // Add and store a brush for each axis.
+                g.selectAll(".brush")
+                .each(function(d) {
+                    d3.select(this).call(y[d].brush = d3.svg.brush().y(y[d]).on("brush", brush));//on("brushstart", brushstart).
+                })
+                .selectAll("rect")
+                .attr("x", -8)
+                .attr("width", 16);
+        })
+    }
+
     function position(d) {
         var v = dragging[d];
         return v == null ? x(d) : v;
@@ -218,15 +331,18 @@
     // Returns the path for a given data point.
     function path(d) {
         //
+        // console.log(d);
         var path_list = [];
         for(var i = 0; i <= Math.floor(dimensions_index.length / change_line_interval); i ++) {
             l = line(dimensions_index.slice(i * change_line_interval, (i+1) * change_line_interval).map(function (p) {
+                // console.log(y[p](d[p + offset]));
                 return [x(p % change_line_interval), y[p](d[p + offset])];
             }));
-            // console.log([d[0], dimensions.map(function(p, i) { return [x(i), y[p](d[i+2])]; })]);
+            // console.log([d[0], dimensions.map(function(p, j) { return [x(), y[p](d[j+2])]; })]);
             // console.log(l);
             path_list.push(l);
         }
+        // if(d[2] == 153) console.log(path_list);
         return path_list;//line(dimensions.map(function(p, i) { return [x(p), y[p](d[i+2])]; }));
     }
 
@@ -256,20 +372,25 @@
     }
 
     function reset_visibility() {
-        var sentive_ids = [1007 ,
-        1013 ,
-        1059 ,
-        1098 ,
-        1149,
-        1207 ,
-        1420 ,
-        1421 ,
-        1456 ,
-        1498
-            ].map(function (value) { return value.toString(); });//['1444'];
+        // var sentive_ids = [1265//1007 ,
+        // // 1013 ,
+        // // 1059 ,
+        // // 1098 ,
+        // // 1149,
+        // // 1207 ,
+        // // 1420 ,
+        // // 1421 ,
+        // // 1456 ,
+        // // 1498
+        //     ].map(function (value) { return value.toString(); });//['1444'];
         // var id_found = sentive_ids.includes(d[0])
+        foreground.style("display", null);
+    }
+
+    function highlight() {
+        var searching_ids = document.getElementById("searching_id").value.split(",");
         foreground.style("display", function(d) {
-            return sentive_ids.includes(d[0]) ? null : "none";
+            return searching_ids.includes(d[0]) ? null : "none";
         });
     }
 
