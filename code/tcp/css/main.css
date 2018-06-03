@@ -30,13 +30,14 @@
 }
 
 .axis path,
-.axis line {
+.axis line,
+.domain {
   fill: none;
-  stroke: #000;
+  stroke: #fff;
   shape-rendering: crispEdges;
 }
 .outer-div{
-	//background-color: #222;
+	/* //background-color: #222; */
 	border-radius: 7px;
 	border: 2px solid rgb(199, 199, 199);
 }

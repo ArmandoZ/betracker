@@ -4,7 +4,8 @@ function View1(Observer) {
     var $bmDiv=$("#bottom-div");
     var svgwidth=$bmDiv.width();
     var svgheight=$bmDiv.height();
-    var margin = {top: 10, right: 20, bottom: 20, left: 50};
+    var margin = {top: 20, right: 70, bottom: 20, left: 70};
+    // var margin = {top: 10, right: 20, bottom: 20, left: 50};
     var width = svgwidth - margin.left - margin.right;
     var height = svgheight - margin.top - margin.bottom;
 
@@ -66,17 +67,17 @@ function View1(Observer) {
                     .attr("stroke", "#252522")
                     .data([i * 10000 + j])
                     .on("mouseover",function(d,idx) {
-                        var a = d3.select(this)
-                        var title = a._groups[0][0].childNodes[0].textContent
-                        console.log(title)
-                        var col = a._groups[0][0].__data__ % 10000
-                        var row = a._groups[0][0].__data__ / 10000
-                        var str = "<p>" + title + '</p>';
-                        tooltip.html(str)
-                        //设置tooltip的位置(left,top 相对于页面的距离)
-                                .style("left",(d3.event.pageX)+"px")
-                                .style("top",(d3.event.pageY+20)+"px")
-                                .style("opacity",1.0);
+                        // var a = d3.select(this)
+                        // var title = a._groups[0][0].childNodes[0].textContent
+                        // console.log(title)
+                        // var col = a._groups[0][0].__data__ % 10000
+                        // var row = a._groups[0][0].__data__ / 10000
+                        // var str = "<p>" + title + '</p>';
+                        // tooltip.html(str)
+                        // //设置tooltip的位置(left,top 相对于页面的距离)
+                        //         .style("left",(d3.event.pageX-35)+"px")
+                        //         .style("top",(d3.event.pageY+20)+"px")
+                        //         .style("opacity",1.0);
                     })
                     .on("mouseout", function(d, idx) {
                         tooltip.style("opacity",0.0);

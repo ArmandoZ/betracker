@@ -1,6 +1,6 @@
 .tooltip{
     position: absolute;
-    width: 180px;
+    width: 240px;
     height: auto;
     font-family: simsun;
     font-size: 14px;
@@ -30,9 +30,10 @@
 }
 
 .axis path,
-.axis line {
+.axis line,
+.domain {
   fill: none;
-  stroke: #000;
+  stroke: #fff;
   shape-rendering: crispEdges;
 }
 .outer-div{

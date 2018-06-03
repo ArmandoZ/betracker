@@ -271,7 +271,7 @@ function View1(Observer) {
             .attr("transform", function(d) { return d.angle > Math.PI ? "rotate(180) translate(-16)" : null; })
             .style("text-anchor", function(d) { return d.angle > Math.PI ? "end" : null; })
             .text(function(d) { return ip_name_list[d.id]; })
-            .attr("font-size", "6px")
+            .attr("font-size", "10px")
             .attr("fill", "#FFFFFF");
 
         g.append("g")
