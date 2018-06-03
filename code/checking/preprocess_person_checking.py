@@ -11,7 +11,7 @@ engineeringList = []
 financeList = []
 hrList = []
 
-with open("../../../email/staff_grouping.json",'r') as load_f:
+with open("../../email/staff_grouping.json",'r') as load_f:
     load_dict = json.load(load_f)
     engineeringList.extend(load_dict["engList"])
     engineeringList.extend(load_dict["engLeaderList"])
@@ -93,11 +93,11 @@ for id in totalList:
 
 
 cwd = os.getcwd()
-dirs = os.listdir(cwd + "/../../website/data/")
+dirs = os.listdir(cwd + "/../website/data/")
 fineNamePaths = []
 for dir in dirs:
     if (dir[0] == '2'):
-        fineNamePaths.append("../../website/data/" + dir + "/checking.csv")
+        fineNamePaths.append("../website/data/" + dir + "/checking.csv")
 
 def indexof(arr, data):
     res = -1

@@ -37,6 +37,10 @@
     var keys = ["engineering", "finance", "hr"];
     // var keys = ["engineering", "finance", "hr"];
 
+    var tooltip = d3.select("body").append("div")
+        .attr("class","tooltip") //用于css设置类样式  
+        .attr("opacity",0.0);  
+
     function clear() {
         svg.selectAll('*').remove();
     }
@@ -69,18 +73,47 @@
             .attr("y", function(d) { return y(d.value); })
             .attr("width", x1.bandwidth())
             .attr("height", function(d) { return height - y(d.value); })
-            .attr("fill", function(d) { return z(d.key); });
+            .attr("fill", function(d) { return z(d.key); })
+            .on("mouseover",function(d) {     
+                //设置tooltip文字  
+                var str = ""
+                var dept = ""
+                if (d.key == "engineering") {
+                    dept = "研发部"
+                } else if (d.key == "finance") {
+                    dept = "财务部"
+                } else {
+                    dept = "人力资源部"
+                }
+                str += "<p>部门: " + dept + "</p>";
+                str += "<p>打卡人次: " + d.value + "</p>";
+                tooltip.html(str)
+                //设置tooltip的位置(left,top 相对于页面的距离)   
+                        .style("left",(d3.event.pageX)+"px")  
+                        .style("top",(d3.event.pageY+20)+"px")  
+                        .style("opacity",1.0); 
+            })
+            .on("mouseout",function(d) {     
+                tooltip.style("opacity",0.0);
+            });
 
         g.append("g")
             .attr("class", "axis")
             .attr("stroke", "#bba")
             .attr("transform", "translate(0," + height + ")")
             .call(d3.axisBottom(x0));
-
-        g.append("g")
+        
+        if (y.domain()[1] < 10) {
+            g.append("g")
             .attr("class", "axis")
             .attr("stroke", "#bba")
-            .call(d3.axisLeft(y).ticks(10))
+            .call(d3.axisLeft(y).ticks(y.domain()[1]))
+        } else {
+            g.append("g")
+                .attr("class", "axis")
+                .attr("stroke", "#bba")
+                .call(d3.axisLeft(y).ticks(10))
+        }
 
         legend = g.append("g")
             .attr("font-family", "sans-serif")

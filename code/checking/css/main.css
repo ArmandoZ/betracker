@@ -42,7 +42,8 @@ g.tick > line {
 
 .tooltip {
 	background-color: #55555598;
-	padding: 20 5 5 5;
+	padding: 5 5 5 5;
+	width: 100px;
 	border-radius: 7px;
 	border: 2px solid rgb(199, 199, 199);
 }
@@ -102,5 +103,5 @@ g.tick > line {
 }
 
 .domain {
-    stroke: #bba;
+	stroke: #bba;
 }
