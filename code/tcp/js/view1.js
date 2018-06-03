@@ -1,10 +1,10 @@
 // Draw the china map for view 1
 function View1(Observer) {
 
-    var $bmDiv=$("#top-left-div");
+    var $bmDiv=$("#bottom-left");
     var svgwidth=$bmDiv.width();
     var svgheight=$bmDiv.height();
-    var margin = {top: 10, right: 20, bottom: 10, left: 20};
+    var margin = {top: 47, right: 40, bottom: 47, left: 40};
     var width = svgwidth - margin.left - margin.right;
     var height = svgheight - margin.top - margin.bottom;
 
@@ -16,6 +16,9 @@ function View1(Observer) {
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     var record_data = {};
+    var fraction_data= {};
+    var up_data = {};
+    var down_data = {};
 
     // pre-read the data
     function init_data(){
@@ -24,6 +27,57 @@ function View1(Observer) {
             record_data = record_root;
         });
 
+    }
+
+    function get_fraction(){
+        for (date in record_data){
+            fraction_data[date] = new Array();
+            for (interval in record_data[date]){
+                for (i = 0; i < record_data[date][interval].length; i++){
+                    var item = record_data[date][interval][i];
+                    var tmp_source = item[2];
+                    var tmp_up = parseInt(item[4]);
+                    var tmp_down = parseInt(item[5]);
+
+                    if (tmp_source in fraction_data[date]){
+                        fraction_data[date][tmp_source][0] += tmp_up;
+                        fraction_data[date][tmp_source][1] += tmp_down;
+                    }
+                    else{
+                        fraction_data[date][tmp_source] = new Array(2);
+                        fraction_data[date][tmp_source][0] = tmp_up;
+                        fraction_data[date][tmp_source][1] = tmp_down;
+                    }
+                }
+            }
+        }
+
+        var compare_up = function (x, y) {
+            if (parseInt(x[0]) < parseInt(y[0])) {
+                return 1;
+            } else if (parseInt(x[0]) > parseInt(y[0])) {
+                return -1;
+            } else {
+                return 0;
+            }
+        }
+
+        var compare_down = function (x, y) {
+            if (parseInt(x[1]) < parseInt(y[1])) {
+                return 1;
+            } else if (parseInt(x[1]) > parseInt(y[1])) {
+                return -1;
+            } else {
+                return 0;
+            }
+        }
+
+        for (date in fraction_data){
+            up_data[date] = fraction_data[date].sort(compare_up);
+            down_data[date] = fraction_data[date].sort(compare_down);
+        }
+
+        return;
     }
 
     // get the data for chord graph
@@ -155,6 +209,8 @@ function View1(Observer) {
     function draw_chord(day, interval){
         // remove the former graph
         svg.selectAll("g").remove();
+        svg.selectAll("circle").remove();
+        svg.selectAll("line").remove();
 
         var result = get_data(day, interval);
         if (result.length == 0){
@@ -181,7 +237,7 @@ function View1(Observer) {
 
         var color = d3.scaleOrdinal()
             .domain(d3.range(4))
-            .range(["#000000", "#FFDD89", "#957244", "#F26223"]);
+            .range(["#787878", "#FFDD89", "#957244", "#F26223"]);
 
         var g = svg.append("g")
             .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
@@ -199,7 +255,7 @@ function View1(Observer) {
             .attr("d", arc);
 
         var groupTick = group.selectAll(".group-tick")
-          .data(function(d,i) { return groupTicks(d, 1e3,i); })
+          .data(function(d,i) { return groupTicks(d, d.value / 2.0,i); })
           .enter().append("g")
             .attr("class", "group-tick")
             .attr("transform", function(d) { return "rotate(" + (d.angle * 180 / Math.PI - 90) + ") translate(" + outerRadius + ",0)"; });
@@ -208,14 +264,15 @@ function View1(Observer) {
             .attr("x2", 6);
 
         groupTick
-          .filter(function(d) { return d.value === 0; })
+          .filter(function(d) { return d.half === 0.5; })
           .append("text")
             .attr("x", 8)
             .attr("dy", ".35em")
             .attr("transform", function(d) { return d.angle > Math.PI ? "rotate(180) translate(-16)" : null; })
             .style("text-anchor", function(d) { return d.angle > Math.PI ? "end" : null; })
             .text(function(d) { return ip_name_list[d.id]; })
-            .attr("font-size", "8px");
+            .attr("font-size", "6px")
+            .attr("fill", "#FFFFFF");
 
         g.append("g")
             .attr("class", "ribbons")
@@ -230,17 +287,160 @@ function View1(Observer) {
         function groupTicks(d, step, tmp_id) {
           var k = (d.endAngle - d.startAngle) / d.value;
           return d3.range(0, d.value, step).map(function(value) {
-            return {value: value, angle: value * k + d.startAngle, id:tmp_id};
+            return {value: value, angle: value * k + d.startAngle, id:tmp_id, half: value / d.value};
           });
         }
+    }
+
+    function draw_ip(tmp_ip, state){
+        svg.selectAll("g").remove();
+        svg.selectAll("circle").remove();
+        svg.selectAll("line").remove();
+
+        var x = d3.scaleBand()
+            .rangeRound([0, width]);
+
+        var y = d3.scaleLinear()
+            .rangeRound([height, 0]);
+
+        var keys = new Array();
+        console.log(fraction_data);
+        for (var p in fraction_data){
+            keys.push(p.slice(5,10));
+        }
+
+        var compare_date = function (x, y) {//比较函数
+            if (x < y) {
+                return -1;
+            } else if (x > y) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+
+        keys = keys.sort(compare_date);
+
+        console.log(keys);
+
+        x.domain(keys.map(function(d) { return d; }));
+        y.domain([0, 1]);
+
+        var g = svg.append("g");
+
+        g.append("g")
+        .attr("class", "axis")
+        .attr("stroke", "#fff")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x).tickValues(x.domain().filter(function(d,i){ return !(i%3)})))
+        .attr("font-size", "4px");
+
+        g.append("g")
+            .call(d3.axisLeft(y))
+            .attr("stroke", "#fff")
+            .style("font-size", "8px")
+          .append("text")
+            .attr("fill", "#fff")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 6)
+            .attr("dy", "0.71em")
+            .attr("text-anchor", "end");
+
+        var up_date = {};
+        var down_date = {};
+
+        if (state == "uplink"){
+            for (date in up_data){
+                var tmp_date = date.slice(5, 10);
+
+                var ip_set_up = new Array();
+                for (p in up_data[date]){
+                    ip_set_up.push(p);
+                }
+
+                var tmp_y_up = 1.0;
+                var tmp_rank = ip_set_up.length;
+
+                if (ip_set_up.indexOf(tmp_ip) >= 0){
+                    tmp_y_up = (ip_set_up.indexOf(tmp_ip) + 1.0) / ip_set_up.length;
+                    tmp_rank = ip_set_up.indexOf(tmp_ip) + 1;
+                }
+
+                svg.append("circle")
+                        .attr("cx", 12 + x(tmp_date))
+                        .attr("cy", y(tmp_y_up))
+                        .attr("r", 4)
+                        .attr("fill", "#00CED1")
+                        .append("title")
+                        .text(tmp_date + " uplink rank: " + tmp_rank);
+
+                up_date[tmp_date] = tmp_y_up;
+            }
+
+            for (i = 0; i < keys.length; i++){
+                if (i != 0){
+                    svg.append("line")
+                        .attr("x1", 12 + x(keys[i - 1]))
+                        .attr("y1", y(up_date[keys[i - 1]]))
+                        .attr("x2", 12 + x(keys[i]))
+                        .attr("y2", y(up_date[keys[i]]))
+                        .attr("fill", "#00CED1")
+                        .attr("stroke", "#00CED1");
+                }
+            }
+        }
+
+        if (state == "downlink"){
+            for (date in down_data){
+                var tmp_date = date.slice(5, 10);
+
+                var ip_set_down = new Array();
+                for (q in down_data[date]){
+                    ip_set_down.push(q);
+                }
+
+                var tmp_y_down = 1.0;
+                var tmp_rank = ip_set_down.length;
+
+                if (ip_set_down.indexOf(tmp_ip) >= 0){
+                    tmp_y_down = (ip_set_down.indexOf(tmp_ip) + 1.0) / ip_set_down.length;
+                    tmp_rank = ip_set_down.indexOf(tmp_ip) + 1;
+                }
+
+                svg.append("circle")
+                        .attr("cx", 12 + x(tmp_date))
+                        .attr("cy", y(tmp_y_down))
+                        .attr("r", 4)
+                        .attr("fill", "#B3EE3A")
+                        .append("title")
+                        .text(tmp_date + " downlink rank: " + tmp_rank);
+
+                down_date[tmp_date] = tmp_y_down;
+            }
+
+            for (i = 0; i < keys.length; i++){
+                if (i != 0){
+                    svg.append("line")
+                        .attr("x1", 12 + x(keys[i - 1]))
+                        .attr("y1", y(down_date[keys[i - 1]]))
+                        .attr("x2", 12 + x(keys[i]))
+                        .attr("y2", y(down_date[keys[i]]))
+                        .attr("fill", "#B3EE3A")
+                        .attr("stroke", "#B3EE3A");
+                }
+            }
+        }
+
     }
 
     init_data();
 
     var curr_day = "2017-11-01";
     var curr_interval = "08:00-08:30";
+    var curr_state = "downlink";
+    var curr_ip = 0;
     var i=0;
-    setTimeout(function(){draw_chord(curr_day, curr_interval);}, 6000);
+    setTimeout(function(){ get_fraction(); draw_chord(curr_day, curr_interval);}, 6000);
 
     console.oldLog = console.log;
     console.log = function(str) {
@@ -279,8 +479,22 @@ function View1(Observer) {
     document.getElementById('choose_day')
         .addEventListener('change',function(){
             curr_day = this.value;
-
             draw_chord(curr_day, curr_interval);
+    });
+
+    // add the event listener for the choice of up and down
+    document.getElementById('choose_up_down')
+        .addEventListener('change',function(){
+            curr_state = this.value;
+            draw_ip(curr_ip, curr_state);
+    });
+
+    // add the event listener for search button
+    document.getElementById('search_button')
+        .addEventListener('click',function(){
+            var obj = document.getElementById("searchbox");
+            curr_ip = obj.value;
+            draw_ip(curr_ip, curr_state);
     });
 
     Observer.addView(view1);
