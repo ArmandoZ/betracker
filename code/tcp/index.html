@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+    <title>TCP</title>
+    <!-- css library -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/buttons.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <!-- js library -->
+    <script src="jslib/raphael.js"></script>
+    <script src="jslib/sankey.js"></script>
+    <script src="jslib/jquery.min.js"></script>
+    <script src="jslib/d3.v3.min.js"></script>
+    <script src="jslib/d3.js"></script>
+    <script src="jslib/underscore-min.js"></script>
+    <script src="jslib/bootstrap.min.js"></script>
+    <script src="jslib/buttons.js"></script>
+    <script src="jslib/jquery-ui.js"></script>
+    <script type="text/javascript"></script>
+    <script>
+
+    $(function() {
+      $( "#slider-range-min" ).slider({
+        range: "min",
+        value: 0,
+        min: 0,
+        max: 24 * 60 - 1,
+        slide: function( event, ui ) {
+          var tmp_hour = Math.floor(ui.value / 60);
+          var tmp_min = ui.value - tmp_hour * 60;
+          if (tmp_hour >= 10 & tmp_min >= 10){
+              console.log(tmp_hour.toString() + ":" + tmp_min.toString());
+              $( "#amount" ).val( tmp_hour.toString() + ":" + tmp_min.toString() );
+          }
+          if (tmp_hour < 10 & tmp_min >= 10){
+              console.log("0" + tmp_hour.toString() + ":" + tmp_min.toString());
+              $( "#amount" ).val( "0" + tmp_hour.toString() + ":" + tmp_min.toString() );
+          }
+          if (tmp_hour >= 10 & tmp_min < 10){
+              console.log(tmp_hour.toString() + ":0" + tmp_min.toString());
+              $( "#amount" ).val( tmp_hour.toString() + ":0" + tmp_min.toString() );
+          }
+          if (tmp_hour < 10 & tmp_min < 10){
+              console.log("0" + tmp_hour.toString() + ":0" + tmp_min.toString());
+              $( "#amount" ).val( "0" + tmp_hour.toString() + ":0" + tmp_min.toString() );
+          }
+        }
+      });
+      $( "#amount" ).val( $( "#slider-range-min" ).slider( "value" ) );
+    });
+    </script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+    body {
+      font: 10px sans-serif;
+    }
+
+    .group-tick line {
+      stroke: #000;
+    }
+
+    .ribbons {
+      fill-opacity: 0.67;
+    }
+
+    </style>
+</head>
+
+
+<body>
+
+<!--the main division-->
+<div id="main-div">
+    <div id="top-div" class="outer-div">
+        <select id="choose_day" class="selector_1" style="margin-left: 50px;margin-top: 30px;">
+            <option value="2017-11-01">2017-11-01 星期三</option>
+            <option value="2017-11-02">2017-11-02 星期四</option>
+            <option value="2017-11-03">2017-11-03 星期五</option>
+            <option value="2017-11-04">2017-11-04 星期六</option>
+            <option value="2017-11-05">2017-11-05 星期日</option>
+            <option value="2017-11-06">2017-11-06 星期一</option>
+            <option value="2017-11-07">2017-11-07 星期二</option>
+            <option value="2017-11-08">2017-11-08 星期三</option>
+            <option value="2017-11-09">2017-11-09 星期四</option>
+            <option value="2017-11-10">2017-11-10 星期五</option>
+            <option value="2017-11-11">2017-11-11 星期六</option>
+            <option value="2017-11-12">2017-11-12 星期日</option>
+            <option value="2017-11-13">2017-11-13 星期一</option>
+            <option value="2017-11-14">2017-11-14 星期二</option>
+            <option value="2017-11-15">2017-11-15 星期三</option>
+            <option value="2017-11-16">2017-11-16 星期四</option>
+            <option value="2017-11-17">2017-11-17 星期五</option>
+            <option value="2017-11-18">2017-11-18 星期六</option>
+            <option value="2017-11-19">2017-11-19 星期日</option>
+            <option value="2017-11-20">2017-11-20 星期一</option>
+            <option value="2017-11-21">2017-11-21 星期二</option>
+            <option value="2017-11-22">2017-11-22 星期三</option>
+            <option value="2017-11-23">2017-11-23 星期四</option>
+            <option value="2017-11-24">2017-11-24 星期五</option>
+            <option value="2017-11-25">2017-11-25 星期六</option>
+            <option value="2017-11-26">2017-11-26 星期日</option>
+            <option value="2017-11-27">2017-11-27 星期一</option>
+            <option value="2017-11-28">2017-11-28 星期二</option>
+            <option value="2017-11-29">2017-11-29 星期三</option>
+            <option value="2017-11-30">2017-11-30 星期四</option>
+        </select>
+
+        <select id="choose_up_down" class="selector_2" style="margin-left: 50px;margin-top: 30px;">
+            <option value="downlink">downlink</option>
+            <option value="uplink">uplink</option>
+        </select>
+
+        <p style="height:10px;"> </p>
+        <p>
+            <label for="amount" style="color: #fff; margin-left: 50px;">所选时间：</label>
+            <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
+
+            <label for="amount" style="color: #fff; margin-left: 50px;">搜索IP：</label>
+            <input type="text" id="searchbox" style="border:0; color:#f6931f; font-weight:bold;">
+            <button type="button" id="search_button">Search</button>
+        </p>
+        <div id="slider-range-min" style="margin-left: 70px;margin-right: 70px;"></div>
+  </div>
+  <div id="bottom-left" class="outer-div">
+      <div id="view1" class="block-div">
+
+      </div>
+  </div>
+
+  <div id="bottom-right" class="outer-div">
+      <div id="bottom-right-up">
+          <div id="view2" class="block-div">
+
+          </div>
+      </div>
+      <div id="bottom-right-down">
+          <div id="view3" class="block-div">
+
+          </div>
+      </div>
+  </div>
+
+	<!--<div id="top-left-div" class="outer-div">
+		<div id="view1" class="block-div">
+
+		</div>
+	</div>
+	<div id="top-right-div" class="outer-div">
+
+    <select id="choose_day" class="selector_1">
+        <option value="2017-11-01">2017-11-01 </option>
+        <option value="2017-11-02">2017-11-02 </option>
+        <option value="2017-11-03">2017-11-03 </option>
+        <option value="2017-11-04">2017-11-04 </option>
+        <option value="2017-11-05">2017-11-05 </option>
+        <option value="2017-11-06">2017-11-06 </option>
+        <option value="2017-11-07">2017-11-07 </option>
+        <option value="2017-11-08">2017-11-08 </option>
+        <option value="2017-11-09">2017-11-09 </option>
+        <option value="2017-11-10">2017-11-10 </option>
+        <option value="2017-11-11">2017-11-11 </option>
+        <option value="2017-11-12">2017-11-12 </option>
+        <option value="2017-11-13">2017-11-13 </option>
+        <option value="2017-11-14">2017-11-14 </option>
+        <option value="2017-11-15">2017-11-15 </option>
+        <option value="2017-11-16">2017-11-16 </option>
+        <option value="2017-11-17">2017-11-17 </option>
+        <option value="2017-11-18">2017-11-18 </option>
+        <option value="2017-11-19">2017-11-19 </option>
+        <option value="2017-11-20">2017-11-20 </option>
+        <option value="2017-11-21">2017-11-21 </option>
+        <option value="2017-11-22">2017-11-22 </option>
+        <option value="2017-11-23">2017-11-23 </option>
+        <option value="2017-11-24">2017-11-24 </option>
+        <option value="2017-11-25">2017-11-25 </option>
+        <option value="2017-11-26">2017-11-26 </option>
+        <option value="2017-11-27">2017-11-27 </option>
+        <option value="2017-11-28">2017-11-28 </option>
+        <option value="2017-11-29">2017-11-29 </option>
+        <option value="2017-11-30">2017-11-30 </option>
+    </select>
+
+	</div>
+    <div id="bottom-div" class="outer-div">
+    <p>
+        <label for="amount">所选时间：</label>
+        <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
+    </p>
+    <div id="slider-range-min"></div>
+
+    </div>-->
+</div>
+
+<!-- js -->
+<script src="js/view1.js"></script>
+<script src="js/view2.js"></script>
+<script src="js/view3.js"></script>
+<script src="js/observer.js"></script>
+<script src="js/jquery.ssd-vertical-navigation.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+
+</html>
