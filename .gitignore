@@ -7,3 +7,6 @@ code/weblog/weblog_analysis.py
 code/weblog/chinavis2018挑战一数据/
 code/weblog/.ipynb_checkpoints/
 *.swp
+*.tmp
+docs/~$3-yuheng.docx
+docs/report.zip
